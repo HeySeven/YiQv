@@ -1,0 +1,176 @@
+@import "_xmixins";
+//定义变量
+$color: #1b1b1b;
+$light-color: #898989;
+$lighter-color: #aaa;
+$primary-color: #75c171;
+$danger-color: #fc6864;
+
+//mixin
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+body, html {
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 13px;
+  color: $color;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #f5f5f5
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.text-muted {
+  color: #777
+}
+
+.text-primary {
+  color: $primary-color
+}
+
+a.text-primary:focus, a.text-primary:hover {
+  color: darken($primary-color, 15%)
+}
+
+.text-success {
+  color: #00b170
+}
+
+a.text-success:focus, a.text-success:hover {
+  color: #2b542c
+}
+
+.text-info {
+  color: #31708f
+}
+
+a.text-info:focus, a.text-info:hover {
+  color: #245269
+}
+
+.text-warning {
+  color: #8a6d3b
+}
+
+a.text-warning:focus, a.text-warning:hover {
+  color: #66512c
+}
+
+.text-danger {
+  color: $danger-color !important;
+}
+
+a.text-danger:focus, a.text-danger:hover {
+  color: darken($danger-color, 15%)
+}
+
+.clearfix {
+  @include x-clearfix;
+}
+
+.alert {
+  padding: 10px;
+  font-size: 12px;
+}
+.alert-dismissable,.alert-dismissible {
+  padding-right: 35px;
+  .close{
+    position: relative;
+    top: -2px;
+    right: -21px;
+    color: inherit;
+  }
+}
+.close{
+  float: right;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+}
+button.close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+}
+.alert-primary{
+  color: #fff;
+  background-color: $primary-color!important;
+}
+
+
+.container {
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 54px;
+  & > div {
+    background-color: #ffffff;
+  }
+}
+
+.response-img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.money-btn{
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+  color: $danger-color;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 10px;
+  @include x-border-radius(12px);
+}
+
+
