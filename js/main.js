@@ -7,5 +7,15 @@ $(function() {
     $("body").on("click",'[data-dismiss="alert"]',function(){
         $(this).closest(".alert").fadeOut();
     })
+    $("body").on("click",'.audio-btn',function(){
+        var eleAudio = $(this).children("audio").get(0);
+        var $iconVoice = $(this).children(".icon-voice");
+        eleAudio.play();
+        $iconVoice.addClass("working");
+        eleAudio.onended=function(){
+            $iconVoice.removeClass("working");
+        }
+    })
+
 
 });
