@@ -136,6 +136,9 @@ a.text-danger:focus, a.text-danger:hover {
   font-weight: 700;
   line-height: 1;
 }
+.bg-trans{
+  background-color: transparent!important;
+}
 button.close {
   -webkit-appearance: none;
   padding: 0;
@@ -156,6 +159,7 @@ button.close {
     background-color: #ffffff;
   }
 }
+
 
 .response-img{
   display: block;
