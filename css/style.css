@@ -439,5 +439,7 @@ a.media-box:active {
   font-size: 12px;
   color: #bfbfbf;
   padding: 10px 12px 0; }
+.xyz-box .weui_media_box:before {
+  left: 65px; }
 
 /*# sourceMappingURL=style.css.map */
