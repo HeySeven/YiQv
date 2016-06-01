@@ -125,14 +125,12 @@ button.close {
 .container {
   -webkit-overflow-scrolling: touch;
   padding-bottom: 54px; }
-  .container > div {
-    background-color: #ffffff; }
 
 .weui_media_box {
   padding: 12px; }
 
 .weui_cells {
-  margin-top: 15px; }
+  margin-top: 10px; }
 
 .response-img {
   display: block;
@@ -168,7 +166,8 @@ button.close {
   border-radius: 12px; }
 
 .index-header {
-  padding: 10px 50px; }
+  padding: 10px 50px;
+  background-color: #ffffff; }
   .index-header ul {
     display: -webkit-box;
     display: -moz-box;
@@ -443,20 +442,21 @@ a.media-box:active {
 .sort-box {
   background-color: #efefef !important;
   padding: 10px 12px; }
-  .sort-box .sort-btn {
-    display: inline-block;
-    padding: 4px 10px;
-    color: #a0a0a0;
-    font-size: 12px;
-    background-color: #ffffff;
-    border: 1px solid #fff;
-    line-height: 1;
-    -moz-border-radius: 14px;
-    -webkit-border-radius: 14px;
-    border-radius: 14px; }
-    .sort-box .sort-btn.active {
-      border-color: #75c171;
-      color: #75c171; }
+
+.sort-btn {
+  display: inline-block;
+  padding: 4px 10px;
+  color: #a0a0a0;
+  font-size: 12px;
+  background-color: #ffffff;
+  border: 1px solid #fff;
+  line-height: 1;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  border-radius: 14px; }
+  .sort-btn.active {
+    border-color: #75c171;
+    color: #75c171; }
 
 .xyz-box .xyz-title {
   font-size: 12px;
@@ -467,7 +467,8 @@ a.media-box:active {
 
 .my-head {
   padding: 35px 12px 25px;
-  text-align: center; }
+  text-align: center;
+  background-color: #ffffff; }
   .my-head .my-dl {
     margin-bottom: 5px; }
     .my-head .my-dl dt img {
@@ -508,5 +509,89 @@ a.media-box:active {
     width: 10px;
     height: 10px;
     border-width: 1px 1px 0 0; }
+
+.my-head-login {
+  position: relative;
+  background: url(../images/my-head-bg.jpg) center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .my-head-login .my-flex-box {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    color: #ffffff; }
+    .my-head-login .my-flex-box dl {
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+      .my-head-login .my-flex-box dl a {
+        color: #ffffff; }
+      .my-head-login .my-flex-box dl.my-dl-side {
+        padding-top: 10px;
+        font-size: 12px; }
+      .my-head-login .my-flex-box dl dd {
+        color: #ffffff !important; }
+
+.my-head-dis {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: -11px;
+  height: 22px;
+  line-height: 22px; }
+  .my-head-dis .head-dis-inner {
+    max-width: 100%;
+    display: inline-block;
+    padding: 0 15px;
+    background-color: #ffffff;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    font-size: 12px;
+    color: #707070;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+
+.my-login-content {
+  background-color: #ffffff; }
+  .my-login-content .login-content-a {
+    padding: 22px 12px 0; }
+    .my-login-content .login-content-a .login-content-tag {
+      padding: 8px 0 12px; }
+      .my-login-content .login-content-a .login-content-tag .sort-btn {
+        background-color: #f6f6f6; }
+  .my-login-content .login-content-b {
+    text-align: center;
+    padding: 12px 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .my-login-content .login-content-b dl {
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+      .my-login-content .login-content-b dl dt {
+        font-size: 16px;
+        color: #75c171; }
+      .my-login-content .login-content-b dl dd {
+        color: #aaa;
+        font-size: 12px; }
+  .my-login-content .login-content-c {
+    padding: 8px 12px;
+    color: #aaa;
+    font-size: 10px; }
+    .my-login-content .login-content-c span {
+      color: #1b1b1b; }
 
 /*# sourceMappingURL=style.css.map */

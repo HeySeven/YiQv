@@ -2,6 +2,7 @@
 
 .index-header {
   padding: 10px 50px;
+  background-color: #ffffff;
   ul {
     @include flexbox();
     line-height: 29px;
@@ -308,19 +309,21 @@ a.media-box {
 .sort-box{
   background-color: #efefef!important;
   padding:10px 12px;
-  .sort-btn{
-    display: inline-block;
-    padding: 4px 10px;
-    color: #a0a0a0;
-    font-size: 12px;
-    background-color: #ffffff;
-    border: 1px solid #fff;
-    line-height: 1;
-    @include x-border-radius(14px);
-    &.active{
-      border-color: $primary-color;
-      color: $primary-color;
-    }
+
+}
+
+.sort-btn{
+  display: inline-block;
+  padding: 4px 10px;
+  color: #a0a0a0;
+  font-size: 12px;
+  background-color: #ffffff;
+  border: 1px solid #fff;
+  line-height: 1;
+  @include x-border-radius(14px);
+  &.active{
+    border-color: $primary-color;
+    color: $primary-color;
   }
 }
 
@@ -339,6 +342,7 @@ a.media-box {
 .my-head{
   padding: 35px 12px 25px;
   text-align: center;
+  background-color: #ffffff;
   .my-dl{
     margin-bottom: 5px;
     dt{
@@ -399,11 +403,84 @@ a.media-box {
 }
 
 
+.my-head-login{
+  position: relative;
+  background: url(../images/my-head-bg.jpg) center no-repeat;
+  @include x-background-size(cover);
+  .my-flex-box{
+    @include flexbox();
+    color: #ffffff;
+    dl{
+      @include flex(1);
+      a{
+        color: #ffffff;
+      }
+      &.my-dl-side{
+        padding-top: 10px;
+        font-size: 12px;
+      }
+      dd{
+        color: #ffffff!important;
+      }
+    }
+  }
+}
 
+.my-head-dis{
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: -11px;
+  height: 22px;
+  line-height: 22px;
+  .head-dis-inner{
+    max-width: 100%;
+    display: inline-block;
+    padding: 0 15px;
+    background-color: #ffffff;
+    @include x-border-radius(15px);
+    font-size: 12px;
+    color: #707070;
+    @include x-text-overflow(ellipsis);
+  }
+}
 
-
-
-
+.my-login-content{
+  background-color: #ffffff;
+  .login-content-a{
+    padding:22px 12px 0;
+    .login-content-tag{
+      padding: 8px 0 12px;
+      .sort-btn{
+        background-color: #f6f6f6;
+      }
+    }
+  }
+  .login-content-b{
+    text-align: center;
+    padding: 12px 0;
+    @include flexbox();
+    dl{
+      @include flex(1);
+      dt{
+        font-size: 16px;
+        color: $primary-color;
+      }
+      dd{
+        color: $lighter-color;
+        font-size: 12px;
+      }
+    }
+  }
+  .login-content-c{
+    padding: 8px 12px;
+    color: $lighter-color;
+    font-size: 10px;
+    span{
+      color: $color;
+    }
+  }
+}
 
 
 

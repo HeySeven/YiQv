@@ -175,16 +175,13 @@ button.close {
 .container {
   -webkit-overflow-scrolling: touch;
   padding-bottom: 54px;
-  & > div {
-    background-color: #ffffff;
-  }
 }
 
 .weui_media_box{
   padding: 12px;
 }
 .weui_cells{
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .response-img{
   display: block;
