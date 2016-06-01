@@ -70,6 +70,22 @@ a.text-danger:focus, a.text-danger:hover {
   .clearfix:after {
     clear: both; }
 
+.btn {
+  display: inline-block;
+  padding: 6px 25px;
+  border: 1px solid #898989;
+  color: #1b1b1b;
+  -moz-border-radius: 18px;
+  -webkit-border-radius: 18px;
+  border-radius: 18px; }
+
+.btn-danger {
+  border-color: #fc6864;
+  background-color: #fc6864;
+  color: #ffffff; }
+  .btn-danger:active {
+    background-color: #fb1f19; }
+
 .alert {
   padding: 10px;
   font-size: 12px; }
@@ -102,6 +118,10 @@ button.close {
   color: #fff;
   background-color: #75c171 !important; }
 
+.alert-danger {
+  color: #fff;
+  background-color: #fc6864 !important; }
+
 .container {
   -webkit-overflow-scrolling: touch;
   padding-bottom: 54px; }
@@ -110,6 +130,9 @@ button.close {
 
 .weui_media_box {
   padding: 12px; }
+
+.weui_cells {
+  margin-top: 15px; }
 
 .response-img {
   display: block;
@@ -441,5 +464,49 @@ a.media-box:active {
   padding: 10px 12px 0; }
 .xyz-box .weui_media_box:before {
   left: 65px; }
+
+.my-head {
+  padding: 35px 12px 25px;
+  text-align: center; }
+  .my-head .my-dl {
+    margin-bottom: 5px; }
+    .my-head .my-dl dt img {
+      width: 58px;
+      height: 58px;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%; }
+    .my-head .my-dl dd {
+      font-size: 16px;
+      color: #1b1b1b; }
+  .my-head p {
+    color: #898989; }
+
+.my-btn-box {
+  padding-top: 12px; }
+
+.my-cells {
+  background-color: transparent !important; }
+  .my-cells .weui_cells:before, .my-cells .weui_cells:after {
+    display: none; }
+  .my-cells .weui_cells .weui_cell {
+    color: #898989;
+    font-size: 13px; }
+    .my-cells .weui_cells .weui_cell:before {
+      left: 0;
+      border-color: #f7f7f7; }
+    .my-cells .weui_cells .weui_cell i {
+      margin-top: -2px;
+      margin-right: 10px;
+      display: inline-block;
+      color: #898989;
+      font-size: 20px;
+      vertical-align: middle;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+  .my-cells .weui_cells_access .weui_cell_ft:after {
+    width: 10px;
+    height: 10px;
+    border-width: 1px 1px 0 0; }
 
 /*# sourceMappingURL=style.css.map */

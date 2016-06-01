@@ -6,6 +6,7 @@ $lighter-color: #aaa;
 $primary-color: #75c171;
 $danger-color: #fc6864;
 
+$fz-normal:13px;
 //mixin
 @mixin flexbox() {
   display: -webkit-box;
@@ -117,6 +118,22 @@ a.text-danger:focus, a.text-danger:hover {
   @include x-clearfix;
 }
 
+.btn{
+  display: inline-block;
+  padding: 6px 25px;
+  border: 1px solid $light-color;
+  color: $color;
+  @include x-border-radius(18px);
+}
+.btn-danger{
+  border-color: $danger-color;
+  background-color: $danger-color;
+  color: #ffffff;
+  &:active{
+  background-color: darken($danger-color, 15%);
+  }
+}
+
 .alert {
   padding: 10px;
   font-size: 12px;
@@ -150,7 +167,10 @@ button.close {
   color: #fff;
   background-color: $primary-color!important;
 }
-
+.alert-danger{
+  color: #fff;
+  background-color: $danger-color!important;
+}
 
 .container {
   -webkit-overflow-scrolling: touch;
@@ -163,7 +183,9 @@ button.close {
 .weui_media_box{
   padding: 12px;
 }
-
+.weui_cells{
+  margin-top: 15px;
+}
 .response-img{
   display: block;
   max-width: 100%;
