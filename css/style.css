@@ -594,4 +594,30 @@ a.media-box:active {
     .my-login-content .login-content-c span {
       color: #1b1b1b; }
 
+.my-tag-box {
+  text-align: center; }
+  .my-tag-box .sort-btn {
+    background-color: #f6f6f6; }
+
+.cell-input {
+  width: 100px;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 0;
+  background-color: #f5f5f5;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  outline: none; }
+  .cell-input::-moz-placeholder {
+    color: #fc6864;
+    opacity: 1; }
+  .cell-input:-moz-placeholder {
+    color: #fc6864; }
+  .cell-input:-ms-input-placeholder {
+    color: #fc6864; }
+  .cell-input::-webkit-input-placeholder {
+    color: #fc6864; }
+
 /*# sourceMappingURL=style.css.map */

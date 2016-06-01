@@ -482,9 +482,24 @@ a.media-box {
   }
 }
 
+.my-tag-box{
+  text-align: center;
+  .sort-btn{
+    background-color: #f6f6f6;
+  }
+}
 
-
-
+.cell-input{
+  width: 100px;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 0;
+  background-color: #f5f5f5;
+  @include x-border-radius(15px);
+  outline: none;
+  @include x-placeholder($danger-color);
+}
 
 
 
