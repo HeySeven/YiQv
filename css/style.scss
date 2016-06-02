@@ -207,6 +207,7 @@ a.media-box {
 .cell-media-box {
   background-color: #ffffff;
   margin-bottom: 10px;
+  display: block;
   .weui_media_box.weui_media_appmsg {
     .weui_media_hd {
       width: 42px;
@@ -243,6 +244,9 @@ a.media-box {
     background-color: #f6f6f6;
     padding: 8px 15px;
     @include x-border-radius(0 12px 12px 12px);
+  }
+  .media-nobg{
+    color: $color;
   }
 }
 
@@ -501,5 +505,48 @@ a.media-box {
   @include x-placeholder($danger-color);
 }
 
+.question-tab{
+  padding: 8px 0;
+  text-align: center;
+  color: $light-color;
+  ul{
+    li{
+      font-size: 14px;
+      display: inline-block;
+      margin: 0 15px;
+      &.active{
+        color: $danger-color;
+        border-bottom: 2px solid $danger-color;
+      }
+    }
+  }
+}
+.question-wrap{
 
+}
+.cell-question-box{
+  color: $light-color;
+  &:active{
+    background-color: #ECECEC;
+  }
+  .question-status{
+    font-size: 13px;
+    margin-left: 8px;
+  }
+  .media-box{
+    background-color: transparent;
+    padding-top: 0;
+  }
+}
 
+.question-box-2{
+  .media-question-box{
+    padding: 12px;
+  }
+  .weui_media_box{
+    padding: 0 12px;
+    &:before{
+      display: none;
+    }
+  }
+}

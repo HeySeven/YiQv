@@ -364,7 +364,8 @@ a.media-box:active {
 
 .cell-media-box {
   background-color: #ffffff;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  display: block; }
   .cell-media-box .weui_media_box.weui_media_appmsg .weui_media_hd {
     width: 42px;
     height: 42px;
@@ -396,6 +397,8 @@ a.media-box:active {
     -moz-border-radius: 0 12px 12px 12px;
     -webkit-border-radius: 0 12px 12px 12px;
     border-radius: 0 12px 12px 12px; }
+  .media-question-box .media-nobg {
+    color: #1b1b1b; }
 
 .control-dz a {
   font-size: 12px;
@@ -619,5 +622,35 @@ a.media-box:active {
     color: #fc6864; }
   .cell-input::-webkit-input-placeholder {
     color: #fc6864; }
+
+.question-tab {
+  padding: 8px 0;
+  text-align: center;
+  color: #898989; }
+  .question-tab ul li {
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 15px; }
+    .question-tab ul li.active {
+      color: #fc6864;
+      border-bottom: 2px solid #fc6864; }
+
+.cell-question-box {
+  color: #898989; }
+  .cell-question-box:active {
+    background-color: #ECECEC; }
+  .cell-question-box .question-status {
+    font-size: 13px;
+    margin-left: 8px; }
+  .cell-question-box .media-box {
+    background-color: transparent;
+    padding-top: 0; }
+
+.question-box-2 .media-question-box {
+  padding: 12px; }
+.question-box-2 .weui_media_box {
+  padding: 0 12px; }
+  .question-box-2 .weui_media_box:before {
+    display: none; }
 
 /*# sourceMappingURL=style.css.map */
