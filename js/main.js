@@ -22,11 +22,19 @@ $(function() {
         eleAudio.onended=function(){
             $iconVoice.removeClass("working");//移除播放gif效果
         }
-    }
+    };
 
     $("body").on("click","[data-toggle='audio-btn']",function(){
         audioPlay($(this));//播放音频
-    })
+    });
 
+    //领域选择
+    function toggleSlid() {
+        var t = $(".side-menu-bar");
+        t.toggleClass("open");
+    };
+    $("body").on("click", '[data-toggle="slid-btn"]', function() {
+        toggleSlid();
+    });
 
 });

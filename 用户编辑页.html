@@ -32,7 +32,8 @@
         <div class="weui_cells weui_cells_form">
             <div class="weui_cell">
                 <div class="weui_cell_bd weui_cell_primary">
-                    <textarea class="weui_textarea" placeholder="例如：创业者；理财经理；周游列国的文艺青年；心理咨询师；把妹高手......" rows="3"></textarea>
+                    <textarea class="weui_textarea" placeholder="例如：创业者；理财经理；周游列国的文艺青年；心理咨询师；把妹高手......"
+                              rows="3"></textarea>
                 </div>
             </div>
         </div>
@@ -40,12 +41,14 @@
         <div class="weui_cells weui_cells_form">
             <div class="weui_cell">
                 <div class="weui_cell_bd weui_cell_primary">
-                    <textarea class="weui_textarea" placeholder="关于这些，尽情问我：投资理财、迎娶白富美；如何优雅的参加前任婚礼；和异性出差时如何管理自我冲动......或者给你唱个晚安小曲吧。" rows="4"></textarea>
+                    <textarea class="weui_textarea"
+                              placeholder="关于这些，尽情问我：投资理财、迎娶白富美；如何优雅的参加前任婚礼；和异性出差时如何管理自我冲动......或者给你唱个晚安小曲吧。"
+                              rows="4"></textarea>
                 </div>
             </div>
         </div>
         <div class="weui_cells weui_cells_access">
-            <a class="weui_cell" href="javascript:;">
+            <a class="weui_cell" data-toggle="slid-btn">
                 <div class="weui_cell_bd weui_cell_primary">
                     <p>擅长话题</p>
                 </div>
@@ -77,6 +80,143 @@
 
 
 </div>
+<div class="side-menu-bar">
+    <div class="field-head ui-border-b">
+        <div class="field-inner">选择你感兴趣的领域</div>
+    </div>
+    <div class="field-content clearfix">
+        <dl>
+            <dt>
+                <i class="iconfont icon-qingganshijie"></i>
+            </dt>
+            <dd>两性情感</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-1"></i>
+            </dt>
+            <dd>职场发展</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-chihe"></i>
+            </dt>
+            <dd>吃喝玩乐</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-chunvzuo"></i>
+            </dt>
+            <dd>星座风水</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-yinleyingshi"></i>
+            </dt>
+            <dd>影视音乐</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-gouwu"></i>
+            </dt>
+            <dd>消费购物</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-record"></i>
+            </dt>
+            <dd>理财投资</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-jiaoyu"></i>
+            </dt>
+            <dd>教育学习</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-meirong"></i>
+            </dt>
+            <dd>美容时尚</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-weifangchan"></i>
+            </dt>
+            <dd>房产家居</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-lvyouzhishu"></i>
+            </dt>
+            <dd>旅游出行</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-fa"></i>
+            </dt>
+            <dd>法律咨询</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-zhengfu"></i>
+            </dt>
+            <dd>政务民生</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-yishu01"></i>
+            </dt>
+            <dd>艺术设计</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-yiliao"></i>
+            </dt>
+            <dd>医疗保健</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-iconfonthuzhao"></i>
+            </dt>
+            <dd>出国移民</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-chuangjianquanzi"></i>
+            </dt>
+            <dd>创业经验</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-yidonghulianwang-copy"></i>
+            </dt>
+            <dd>互联网+</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-yundongzuqiu1"></i>
+            </dt>
+            <dd>运动健身</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-muying"></i>
+            </dt>
+            <dd>母婴育儿</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-qita"></i>
+            </dt>
+            <dd>其他</dd>
+        </dl>
+
+    </div>
+    <div class="field-head">
+        <a id="tag-save-btn" class="btn btn-danger" data-toggle="slid-btn">保存</a>
+    </div>
+</div>
 <div class="fix-btn-box ui-border-t">
     <ul>
         <li class="active">
@@ -93,5 +233,20 @@
         </li>
     </ul>
 </div>
+<script>
+    function getClassCount(el) {
+        var isAgree = ($(".field-content dl.active").length < 3)||(el.hasClass("active"));
+        return isAgree;
+    }
+    $(".field-content dl").click(function () {
+        if (getClassCount($(this))) {
+            //条件满足
+            $(this).toggleClass("active");
+        }
+    });
+    $("#tag-save-btn").click(function(){
+        console.log(1111)
+    });
+</script>
 </body>
 </html>
