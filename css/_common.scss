@@ -6,8 +6,8 @@ $lighter-color: #aaa;
 $primary-color: #75c171;
 $danger-color: #fc6864;
 $warning-color:#e3b243;
-$fz-normal: 15px;
-$pd: 12px;
+$fz-normal: 16px;
+$pd: 15px;
 //mixin
 @mixin flexbox() {
   display: -webkit-box;
@@ -60,7 +60,7 @@ body, html {
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 15px;
+  font-size: 16px;
   color: $color;
 }
 

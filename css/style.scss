@@ -125,7 +125,7 @@
   position: relative;
   display: block;
   background-color: #ffffff;
-  padding: 12px 15px;
+  padding:15px;
   color: $light-color;
   margin-bottom: 10px;
   &:last-child {
@@ -225,7 +225,7 @@ a.media-box {
       a {
         display: block;
         color: $lighter-color;
-        padding: 12px 0;
+        padding: 15px 0;
       }
       &.active {
         a {
@@ -278,11 +278,11 @@ a.media-box {
     }
     .weui_media_title {
       color: $light-color;
-      font-size: 12px;
+      font-size: 14px;
       b {
         font-weight: normal;
         color: #1b1b1b;
-        font-size: 13px;
+        font-size: 15px;
       }
       .v-line {
         vertical-align: middle;
@@ -311,7 +311,7 @@ a.media-box {
 
 .control-dz {
   a {
-    font-size: 12px;
+    font-size: 14px;
     color: #dcdcdc;
     margin-left: 10px;
     i {
@@ -372,7 +372,7 @@ a.media-box {
 
 .sort-box {
   background-color: #efefef !important;
-  padding: 10px 12px;
+  padding: 10px 15px;
 
 }
 
@@ -380,7 +380,7 @@ a.media-box {
   display: inline-block;
   padding: 4px 10px;
   color: #a0a0a0;
-  font-size: 12px;
+  font-size: 14px;
   background-color: #ffffff;
   border: 1px solid #fff;
   line-height: 1;
@@ -393,9 +393,9 @@ a.media-box {
 
 .xyz-box {
   .xyz-title {
-    font-size: 12px;
+    font-size: 14px;
     color: #bfbfbf;
-    padding: 10px 12px 0;
+    padding: 10px 15px 0;
   }
   .weui_media_box:before {
     left: 65px;
@@ -403,7 +403,7 @@ a.media-box {
 }
 
 .my-head {
-  padding: 35px 12px 25px;
+  padding: 35px 15px 25px;
   text-align: center;
   background-color: #ffffff;
   .my-dl {
@@ -426,7 +426,7 @@ a.media-box {
 }
 
 .my-btn-box {
-  padding-top: 12px;
+  padding-top: 15px;
 }
 
 .my-cells {
@@ -479,7 +479,7 @@ a.media-box {
       }
       &.my-dl-side {
         padding-top: 10px;
-        font-size: 12px;
+        font-size: 14px;
       }
       dd {
         color: #ffffff !important;
@@ -507,7 +507,7 @@ a.media-box {
     padding: 0 15px;
     background-color: #ffffff;
     @include x-border-radius(15px);
-    font-size: 12px;
+    font-size: 14px;
     color: #707070;
     @include x-text-overflow(ellipsis);
     border: 1px solid #e0e0e0;
@@ -517,9 +517,9 @@ a.media-box {
 .my-login-content {
   background-color: #ffffff;
   .login-content-a {
-    padding: 22px 12px 0;
+    padding: 22px 15px 0;
     .login-content-tag {
-      padding: 8px 0 12px;
+      padding: 8px 0 15px;
       .sort-btn {
         background-color: #f6f6f6;
       }
@@ -527,7 +527,7 @@ a.media-box {
   }
   .login-content-b {
     text-align: center;
-    padding: 12px 0;
+    padding: 15px 0;
     @include flexbox();
     dl {
       @include flex(1);
@@ -537,12 +537,12 @@ a.media-box {
       }
       dd {
         color: $lighter-color;
-        font-size: 12px;
+        font-size: 14px;
       }
     }
   }
   .login-content-c {
-    padding: 8px 12px;
+    padding: 8px 15px;
     color: $lighter-color;
     font-size: 10px;
     span {
@@ -611,10 +611,10 @@ a.cell-question-box:active {
 
 .question-box-2 {
   .media-question-box {
-    padding: 12px;
+    padding: 14px;
   }
   .weui_media_box {
-    padding: 0 12px;
+    padding: 0 15px;
     &:before {
       display: none;
     }
@@ -627,11 +627,11 @@ a.cell-question-box:active {
 }
 
 .media-a {
-  padding: 12px;
+  padding: 15px;
 }
 
 .media-b {
-  padding: 30px 0 12px;
+  padding: 30px 0 15px;
   font-size: 16px;
   color: #626262;
 }
@@ -708,13 +708,13 @@ a.cell-question-box:active {
   }
   .pull-right {
     color: $light-color;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
 .cell-media-panel {
   .cell-panel-header {
-    padding: 8px 12px;
+    padding: 8px 15px;
     color: $light-color;
   }
   .cell-panel-body {
@@ -762,7 +762,7 @@ a.cell-question-box:active {
   }
   .content-f-b {
     color: $light-color;
-    font-size: 12px;
+    font-size: 14px;
     padding: 0 15px;
     .weui_cells_checkbox {
       float: left;
@@ -808,7 +808,7 @@ a.cell-question-box:active {
   }
   .btn{
     display: block;
-    padding: 12px;
+    padding: 15px;
     @include x-border-radius(0);
   }
 }
@@ -856,13 +856,13 @@ a.cell-question-box:active {
       }
     }
     dd {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 }
 
 .topic-media{
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   .topic-media-hd{
     margin-bottom: 5px;
     margin-right: -30px;
@@ -872,7 +872,7 @@ a.cell-question-box:active {
       font-size: 13px;
     }
     .pull-right{
-      font-size: 12px;
+      font-size: 14px;
       color: $lighter-color;
     }
   }
@@ -895,14 +895,14 @@ a.cell-question-box:active {
     background-color: #ffffff;
     padding: 8px 15px;
     .pull-right{
-      font-size: 12px;
+      font-size: 14px;
       color: $light-color;
     }
     ul{
       li{
         float: left;
         color: $light-color;
-        font-size: 12px;
+        font-size: 14px;
         &.active{
           color: $color;
         }
