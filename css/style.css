@@ -75,12 +75,13 @@ a.text-danger:focus, a.text-danger:hover {
 
 .btn {
   display: inline-block;
-  padding: 6px 25px;
+  padding: 8px 25px;
   border: 1px solid #898989;
   color: #1b1b1b;
   -moz-border-radius: 18px;
   -webkit-border-radius: 18px;
-  border-radius: 18px; }
+  border-radius: 18px;
+  line-height: 1; }
 
 .btn-danger {
   border-color: #fc6864;
@@ -95,6 +96,15 @@ a.text-danger:focus, a.text-danger:hover {
   color: #ffffff; }
   .btn-success:active {
     background-color: #4aa046 !important; }
+
+.btn-xxs {
+  padding: 0 8px;
+  line-height: 18px;
+  -moz-border-radius: 18px;
+  -webkit-border-radius: 18px;
+  border-radius: 18px; }
+  .btn-xxs i {
+    font-size: 13px; }
 
 .alert {
   padding: 10px;
@@ -402,11 +412,13 @@ a.media-box:active {
 .media-question-box {
   padding: 0 15px; }
   .media-question-box .media-question {
+    display: block;
     background-color: #f6f6f6;
     padding: 8px 15px;
     -moz-border-radius: 0 12px 12px 12px;
     -webkit-border-radius: 0 12px 12px 12px;
-    border-radius: 0 12px 12px 12px; }
+    border-radius: 0 12px 12px 12px;
+    color: #1b1b1b; }
   .media-question-box .media-nobg {
     color: #1b1b1b; }
 
@@ -551,6 +563,14 @@ a.media-box:active {
       .my-head-login .my-flex-box dl dd {
         color: #ffffff !important; }
 
+.my-head-b {
+  position: relative;
+  background: url(../images/my-head-bg-b.jpg) center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 .my-head-dis {
   position: absolute;
   left: 10px;
@@ -570,7 +590,8 @@ a.media-box:active {
     color: #707070;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap; }
+    white-space: nowrap;
+    border: 1px solid #e0e0e0; }
 
 .my-login-content {
   background-color: #ffffff; }
@@ -756,5 +777,67 @@ a.cell-question-box:active {
   background-color: #dcdcdc; }
   .media-re-btn.usable {
     background-color: #fc6864; }
+
+.login-content-e {
+  padding: 0 15px;
+  line-height: 30px; }
+  .login-content-e span {
+    font-size: 14px; }
+  .login-content-e .pull-right {
+    color: #898989;
+    font-size: 12px; }
+
+.cell-media-panel .cell-panel-header {
+  padding: 8px 12px;
+  color: #898989; }
+.cell-media-panel .cell-panel-body .media-question-box {
+  padding: 0; }
+.cell-media-panel .cell-panel-body .weui_media_box.weui_media_appmsg {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+.cell-media-panel .cell-panel-body .media-audio {
+  padding-right: 10px;
+  padding-left: 30px;
+  text-align: right; }
+  .cell-media-panel .cell-panel-body .media-audio .audio-btn {
+    -moz-border-radius: 36px 0 36px 36px;
+    -webkit-border-radius: 36px 0 36px 36px;
+    border-radius: 36px 0 36px 36px; }
+    .cell-media-panel .cell-panel-body .media-audio .audio-btn .icon-voice {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg); }
+  .cell-media-panel .cell-panel-body .media-audio .audio-count {
+    left: -30px;
+    right: auto; }
+
+.login-content-f .content-f-a .weui_cell {
+  padding-bottom: 5px; }
+.login-content-f .textarea-box {
+  background-color: #eeeeee;
+  padding: 5px 10px;
+  border: 1px solid #e0e0e0;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px; }
+  .login-content-f .textarea-box .weui_textarea {
+    background-color: transparent; }
+.login-content-f .content-f-b {
+  color: #898989;
+  font-size: 12px;
+  padding: 0 15px; }
+  .login-content-f .content-f-b .weui_cells_checkbox {
+    float: left; }
+  .login-content-f .content-f-b .weui_cell {
+    padding: 0; }
+    .login-content-f .content-f-b .weui_cell .weui_icon_checked:before {
+      font-size: 13px; }
+.login-content-f .content-f-c {
+  padding: 15px;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
