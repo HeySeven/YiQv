@@ -447,6 +447,7 @@ a.media-box:active {
     line-height: 42px;
     overflow: hidden; }
     .cell-media-box .weui_media_box.weui_media_appmsg .weui_media_hd img {
+      height: 100%;
       display: block;
       -moz-border-radius: 50%;
       -webkit-border-radius: 50%;

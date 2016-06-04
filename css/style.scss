@@ -271,6 +271,7 @@ a.media-box {
       line-height: 42px;
       overflow: hidden;
       img {
+        height: 100%;
         display: block;
         @include x-border-radius(50%);
       }
