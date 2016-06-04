@@ -14,7 +14,7 @@ body, html {
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 13px;
+  font-size: 15px;
   color: #1b1b1b; }
 
 body {
@@ -110,7 +110,7 @@ a.text-danger:focus, a.text-danger:hover {
   -webkit-border-radius: 18px;
   border-radius: 18px; }
   .btn-xxs i {
-    font-size: 13px; }
+    font-size: 15px; }
 
 .alert {
   padding: 10px;
@@ -575,7 +575,7 @@ a.media-box:active {
     display: none; }
   .my-cells .weui_cells .weui_cell {
     color: #898989;
-    font-size: 13px; }
+    font-size: 15px; }
     .my-cells .weui_cells .weui_cell:before {
       left: 0;
       border-color: #f7f7f7; }
@@ -895,8 +895,9 @@ a.cell-question-box:active {
   .login-content-f .content-f-b .weui_cell {
     padding: 0; }
     .login-content-f .content-f-b .weui_cell .weui_icon_checked:before {
-      font-size: 13px; }
-.login-content-f .content-f-c {
+      font-size: 15px; }
+
+.content-f-c {
   padding: 15px;
   text-align: center; }
 
