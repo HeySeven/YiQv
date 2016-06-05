@@ -8,6 +8,21 @@ $(function() {
         $(this).closest(".alert").fadeOut();
     })
 
+    // 设计图宽度
+    window['adaptive'].desinWidth = 640;
+    // body 字体大小
+    //window['adaptive'].baseFont = 18;
+
+     // 显示最大宽度 可选
+     window['adaptive'].maxWidth = 480;
+     // rem值改变后执行方法 可选
+    /*window['adaptive'].setRemCallback = function () {
+     alert(1)
+     }
+     */
+    // 初始化
+    window['adaptive'].init();
+
 
     //音频播放方法定义
     function audioPlay(el){

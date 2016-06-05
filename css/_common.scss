@@ -6,10 +6,10 @@ $lighter-color: #aaa;
 $primary-color: #75c171;
 $danger-color: #fc6864;
 $warning-color:#e3b243;
-$fz-normal: 16px;
-$fz-sm: 14px;
-$fz-xs: 13px;
-$pd: 15px;
+$fz-normal: .32rem;
+$fz-sm: .28rem;
+$fz-xs: .24rem;
+$pd: .3rem;
 //mixin
 @mixin flexbox() {
   display: -webkit-box;
@@ -57,18 +57,19 @@ $pd: 15px;
   box-sizing: border-box
 }
 
+
 body, html {
   height: 100%;
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
   color: $color;
 }
 
 body {
   overflow-x: hidden;
-  background-color: #f5f5f5
+  background-color: #f5f5f5;
+  font-size: $fz-sm;
 }
 
 ul, ol {
@@ -137,7 +138,7 @@ a.text-danger:focus, a.text-danger:hover {
 
 .btn {
   display: inline-block;
-  padding: 8px 25px;
+  padding: 0.08rem 0.25rem;
   border: 1px solid $light-color;
   color: $color;
   @include x-border-radius(18px);
