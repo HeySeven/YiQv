@@ -138,7 +138,7 @@ a.text-danger:focus, a.text-danger:hover {
 
 .btn {
   display: inline-block;
-  padding: 0.15rem 0.7rem;
+  padding: 0.2rem 0.7rem;
   border: 1px solid $light-color;
   color: $color;
   @include x-border-radius(.56rem);
@@ -230,6 +230,9 @@ button.close {
   -webkit-overflow-scrolling: touch;
   padding-bottom: 1.8rem;
   overflow-x: hidden;
+}
+.weui_search_bar{
+  padding:.16rem .2rem;
 }
 .weui_cells_title{
   font-size: .28rem;

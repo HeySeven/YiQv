@@ -6,7 +6,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>用户编辑页</title>
     <link rel="stylesheet" href="weui/weui.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_1465048639_0064878.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1465309396_307587.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.min.js"></script>
     <script src="plugins/fastclick.min.js"></script>
@@ -208,6 +208,24 @@
         </dl>
         <dl>
             <dt>
+                <i class="iconfont icon-qiche"></i>
+            </dt>
+            <dd>爱车懂车</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-dianzhazhoujiayuan6e65e4"></i>
+            </dt>
+            <dd>数码科技</dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="iconfont icon-game"></i>
+            </dt>
+            <dd>电竞游戏</dd>
+        </dl>
+        <dl>
+            <dt>
                 <i class="iconfont icon-qita"></i>
             </dt>
             <dd>其他</dd>
@@ -236,7 +254,7 @@
 </div>
 <script>
     function getClassCount(el) {
-        var isAgree = ($(".field-content dl.active").length < 3)||(el.hasClass("active"));
+        var isAgree = ($(".field-content dl.active").length < 3) || (el.hasClass("active"));
         return isAgree;
     }
     $(".field-content dl").click(function () {
@@ -245,7 +263,7 @@
             $(this).toggleClass("active");
         }
     });
-    $("#tag-save-btn").click(function(){
+    $("#tag-save-btn").click(function () {
         console.log(1111)
     });
 </script>

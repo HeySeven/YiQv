@@ -76,7 +76,7 @@ a.text-danger:focus, a.text-danger:hover {
 
 .btn {
   display: inline-block;
-  padding: 0.15rem 0.7rem;
+  padding: 0.2rem 0.7rem;
   border: 1px solid #898989;
   color: #1b1b1b;
   -moz-border-radius: 0.56rem;
@@ -157,6 +157,9 @@ button.close {
   padding-bottom: 1.8rem;
   overflow-x: hidden; }
 
+.weui_search_bar {
+  padding: .16rem .2rem; }
+
 .weui_cells_title {
   font-size: .28rem; }
 
@@ -225,6 +228,8 @@ button.close {
       .index-header ul li:last-child {
         border-right: 0; }
       .index-header ul li a {
+        display: block;
+        padding: .08rem 0;
         color: #75c171; }
       .index-header ul li.active {
         background-color: #75c171;
@@ -420,7 +425,13 @@ a.media-box:active {
       .fix-btn-box ul li a {
         display: block;
         color: #aaa;
-        padding: .3rem 0; }
+        line-height: 1;
+        padding: .15rem 0;
+        font-size: .2rem; }
+        .fix-btn-box ul li a i {
+          display: block;
+          margin-bottom: .1rem;
+          font-size: .35rem; }
       .fix-btn-box ul li.active a {
         color: #75c171; }
 
@@ -530,34 +541,44 @@ a.media-box:active {
     border-radius: 0.28rem; }
 
 .sort-box {
-  background-color: #efefef !important;
-  padding: .2rem .3rem;
+  border-top: 1px solid #efefef;
+  background-color: #fff;
+  padding: .3rem;
   text-align: center; }
 
-.sort-btn {
-  display: inline-block;
-  padding: .08rem .2rem;
-  color: #a0a0a0;
-  font-size: .22rem;
-  background-color: #ffffff;
-  border: 1px solid #fff;
-  line-height: 1;
-  -moz-border-radius: 0.28rem;
-  -webkit-border-radius: 0.28rem;
-  border-radius: 0.28rem;
-  margin: 0 .03rem; }
-  .sort-btn.active {
-    border-color: #75c171;
-    color: #75c171; }
+.sort-btn-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  border-bottom: 1px solid #efefef; }
+  .sort-btn-box:last-child {
+    border-bottom: 0; }
+  .sort-btn-box li {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border-right: 1px solid #efefef; }
+    .sort-btn-box li:last-child {
+      border-right: 0; }
 
-.xyz-box {
-  background-color: #ffffff; }
-  .xyz-box .xyz-title {
-    font-size: 0.28rem;
-    color: #bfbfbf;
-    padding: .2rem .3rem 0; }
-  .xyz-box .weui_media_box:before {
-    left: 1.3rem; }
+.sort-btn {
+  display: block;
+  padding: .25rem 0;
+  color: #1b1b1b;
+  font-size: .26rem;
+  background-color: #ffffff;
+  line-height: 1; }
+
+.xyz-box .xyz-title {
+  font-size: 0.28rem;
+  color: #898989;
+  padding: .2rem .3rem .04rem; }
+.xyz-box .weui_media_box:before {
+  left: 1.3rem; }
 
 .my-head {
   padding: .7rem .3rem .5rem;
@@ -714,7 +735,8 @@ a.media-box:active {
   -moz-border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
   border-radius: 0.3rem;
-  outline: none; }
+  outline: none;
+  font-size: 0.32rem; }
   .cell-input::-moz-placeholder {
     color: #fc6864;
     opacity: 1; }
@@ -947,7 +969,7 @@ a.cell-question-box:active {
   bottom: .9rem;
   left: 0;
   right: 0;
-  padding: .5rem;
+  padding: .3rem;
   text-align: center;
   color: #898989;
   -webkit-overflow-scrolling: touch;
@@ -963,8 +985,8 @@ a.cell-question-box:active {
   .field-content dl {
     position: relative;
     float: left;
-    padding: .2rem;
-    width: 33.33333333%; }
+    padding: .2rem .06rem;
+    width: 25%; }
     .field-content dl.active {
       color: #fc6864; }
       .field-content dl.active dt {
@@ -973,19 +995,19 @@ a.cell-question-box:active {
           color: #fff; }
     .field-content dl dt {
       display: inline-block;
-      width: .96rem;
-      height: .96rem;
-      line-height: .96rem;
+      width: .8rem;
+      height: .8rem;
+      line-height: .8rem;
       background-color: #f7f7f7;
-      margin-bottom: .2rem;
+      margin-bottom: .15rem;
       -moz-border-radius: 0.4rem;
       -webkit-border-radius: 0.4rem;
       border-radius: 0.4rem; }
       .field-content dl dt i {
         color: #d9d9d9;
-        font-size: .5rem; }
+        font-size: .4rem; }
     .field-content dl dd {
-      font-size: 0.28rem; }
+      font-size: .2rem; }
 
 .topic-media {
   margin-bottom: .3rem; }
@@ -1038,5 +1060,15 @@ a.cell-question-box:active {
   background-color: rgba(170, 170, 170, 0.17);
   color: #bfbfbf;
   text-align: center; }
+
+.no-msg-wrap {
+  text-align: center;
+  padding: .6rem .2rem;
+  color: #898989; }
+  .no-msg-wrap i {
+    font-size: 1.6rem; }
+  .no-msg-wrap p {
+    font-size: .26rem;
+    margin-bottom: .2rem; }
 
 /*# sourceMappingURL=style.css.map */
