@@ -138,11 +138,15 @@ a.text-danger:focus, a.text-danger:hover {
 
 .btn {
   display: inline-block;
-  padding: 0.08rem 0.25rem;
+  padding: 0.15rem 0.7rem;
   border: 1px solid $light-color;
   color: $color;
-  @include x-border-radius(18px);
+  @include x-border-radius(.56rem);
   line-height: 1;
+  font-size: .28rem;
+  i{
+    font-size: .32rem;
+  }
 }
 
 .btn-danger {
@@ -169,32 +173,33 @@ a.text-danger:focus, a.text-danger:hover {
 }
 
 .btn-xxs {
-  padding: 0 8px;
+  padding: .03rem .16rem;
   line-height: 18px;
+  font-size: .23rem;
   @include x-border-radius(18px);
   i {
-    font-size: $fz-normal;
+    font-size: .26rem;
   }
 }
 
 .alert {
-  padding: 10px;
-  font-size: 12px;
+  padding: .2rem;
+  font-size: .24rem;
 }
 
 .alert-dismissable, .alert-dismissible {
-  padding-right: 35px;
+  padding-right: .7rem;
   .close {
     position: relative;
-    top: -2px;
-    right: -21px;
+    top: -.04rem;
+    right: -.42rem;
     color: inherit;
   }
 }
 
 .close {
   float: right;
-  font-size: 18px;
+  font-size: .36rem;
   font-weight: 700;
   line-height: 1;
 }
@@ -223,15 +228,18 @@ button.close {
 
 .container {
   -webkit-overflow-scrolling: touch;
-  padding-bottom: 54px;
+  padding-bottom: 1.8rem;
+  overflow-x: hidden;
 }
-
+.weui_cells_title{
+  font-size: .28rem;
+}
 .weui_media_box {
-  padding: 12px;
+  padding: .24rem;
 }
 
 .weui_cells {
-  margin-top: 10px;
+  margin-top: .2rem;
 }
 
 .response-img {
@@ -245,11 +253,11 @@ button.close {
   text-align: center;
   background: #f6f6f6;
   color: #a0a0a0;
-  font-size: 11px;
-  height: 16px;
-  line-height: 16px;
-  -webkit-border-radius: 8px;
-  padding: 0 6px;
+  font-size: .22rem;
+  height: .32rem;
+  line-height: .32rem;
+  -webkit-border-radius: .16rem;
+  padding: 0 .12rem;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
@@ -263,10 +271,10 @@ button.close {
   display: inline-block;
   border: 1px solid #e5e5e5;
   color: $danger-color;
-  height: 20px;
-  line-height: 20px;
-  padding: 0 10px;
-  @include x-border-radius(12px);
+  height: .4rem;
+  line-height: .4rem;
+  padding: 0 .2rem;
+  @include x-border-radius(.24rem);
 }
 
 

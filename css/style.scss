@@ -370,18 +370,19 @@ a.media-box {
 .sort-box {
   background-color: #efefef !important;
   padding: .2rem .3rem;
-
+  text-align: center;
 }
 
 .sort-btn {
   display: inline-block;
   padding: .08rem .2rem;
   color: #a0a0a0;
-  font-size: $fz-sm;
+  font-size: .22rem;
   background-color: #ffffff;
   border: 1px solid #fff;
   line-height: 1;
   @include x-border-radius(.28rem);
+  margin: 0 .03rem;
   &.active {
     border-color: $primary-color;
     color: $primary-color;
@@ -389,6 +390,7 @@ a.media-box {
 }
 
 .xyz-box {
+  background-color: #ffffff;
   .xyz-title {
     font-size: $fz-sm;
     color: #bfbfbf;
@@ -759,7 +761,7 @@ a.cell-question-box:active {
   }
   .content-f-b {
     color: $light-color;
-    font-size: $fz-sm;
+    font-size: $fz-xs;
     padding: 0 .3rem;
     .weui_cells_checkbox {
       float: left;
@@ -793,17 +795,15 @@ a.cell-question-box:active {
   &.open {
     left: 0;
   }
-  @include flexbox();
-  @include flex-direction(column);
 }
 
 .field-head {
-  @include flex(1);
   text-align: center;
   color: $light-color;
   font-size: $fz-sm;
   .field-inner {
-    padding: .2rem;
+    padding: .3rem .2rem;
+    line-height: 1;
   }
   .btn {
     display: block;
@@ -813,20 +813,31 @@ a.cell-question-box:active {
 }
 
 .field-content {
+  position: absolute;
+  top: .9rem;
+  bottom: .9rem;
+  left: 0;
+  right: 0;
   padding: .5rem;
   text-align: center;
   color: $light-color;
   -webkit-overflow-scrolling: touch;
   overflow: auto;
-  a {
-    color: $danger-color;
-    dt {
-      background-color: $danger-color !important;
-      i {
-        color: #fff !important;
-      }
-    }
+  &+.field-head{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
+  //a {
+  //  color: $danger-color;
+  //  dt {
+  //    background-color: $danger-color !important;
+  //    i {
+  //      color: #fff !important;
+  //    }
+  //  }
+  //}
   dl {
     position: relative;
     float: left;
