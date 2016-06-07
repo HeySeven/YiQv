@@ -828,16 +828,11 @@ a.cell-question-box:active {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 100;
   }
-  //a {
-  //  color: $danger-color;
-  //  dt {
-  //    background-color: $danger-color !important;
-  //    i {
-  //      color: #fff !important;
-  //    }
-  //  }
-  //}
+  a {
+    color: $light-color;
+  }
   dl {
     position: relative;
     float: left;

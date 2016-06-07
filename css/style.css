@@ -956,7 +956,10 @@ a.cell-question-box:active {
     position: absolute;
     bottom: 0;
     left: 0;
-    right: 0; }
+    right: 0;
+    z-index: 100; }
+  .field-content a {
+    color: #898989; }
   .field-content dl {
     position: relative;
     float: left;
