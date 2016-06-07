@@ -174,7 +174,7 @@ a.text-danger:focus, a.text-danger:hover {
 
 .btn-xxs {
   padding: .03rem .16rem;
-  line-height: 18px;
+  line-height: .36rem;
   font-size: .23rem;
   @include x-border-radius(18px);
   i {
@@ -184,7 +184,7 @@ a.text-danger:focus, a.text-danger:hover {
 
 .alert {
   padding: .2rem;
-  font-size: .24rem;
+  font-size: .20rem;
 }
 
 .alert-dismissable, .alert-dismissible {
