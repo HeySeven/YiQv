@@ -984,6 +984,10 @@ a.cell-question-box:active {
 }
 
 .er-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 100%;
   background: url(../images/er-bg.jpg) 0 0 no-repeat;
   @include x-background-size(cover);
@@ -1045,6 +1049,12 @@ a.cell-question-box:active {
   }
 }
 
-
+.about-page{
+  margin-bottom: 1rem;
+  img{
+    display: block;
+    max-width: 100%;
+  }
+}
 
 
