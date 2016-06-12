@@ -804,7 +804,8 @@ a.cell-question-box:active {
   color: #898989; }
 
 .media-a {
-  padding: .3rem; }
+  padding: .3rem;
+  font-size: 0.24rem; }
 
 .media-b {
   padding: .6rem 0 .3rem;
@@ -1161,5 +1162,16 @@ a.cell-question-box:active {
   .about-page img {
     display: block;
     max-width: 100%; }
+
+.wx-sys {
+  position: fixed;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5); }
+  .wx-sys .er-inner {
+    width: 3.64rem;
+    margin-top: 3.18rem; }
+    .wx-sys .er-inner .er-b .er-dl dt {
+      font-size: 0.34rem;
+      margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

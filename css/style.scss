@@ -661,6 +661,7 @@ a.cell-question-box:active {
 
 .media-a {
   padding: .3rem;
+  font-size: $fz-xs;
 }
 
 .media-b {
@@ -1057,4 +1058,16 @@ a.cell-question-box:active {
   }
 }
 
-
+.wx-sys{
+  position: fixed;
+  z-index: 100;
+  background: rgba(0,0,0,.5);
+  .er-inner{
+    width: 3.64rem;
+    margin-top: 3.18rem;
+    .er-b .er-dl dt{
+      font-size: 0.34rem;
+      margin-bottom: 0;
+    }
+  }
+}
