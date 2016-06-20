@@ -224,6 +224,9 @@ button.close {
 .alert-danger {
   color: #fff;
   background-color: $danger-color !important;
+  a{
+    color: #ffffff;
+  }
 }
 
 .container {

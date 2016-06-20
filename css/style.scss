@@ -337,6 +337,9 @@ a.media-box {
   }
   .media-control {
     margin-top: .2rem;
+    .ui-badge{
+      margin: 0 2px;
+    }
   }
   .weui_media_box.weui_media_appmsg {
     -webkit-box-align: start;
@@ -554,6 +557,7 @@ a.media-box {
         @include x-border-radius(.36rem);
         font-size: .24rem;
         color: $light-color;
+        margin: 0 2px;
       }
     }
   }

@@ -151,6 +151,8 @@ button.close {
 .alert-danger {
   color: #fff;
   background-color: #fc6864 !important; }
+  .alert-danger a {
+    color: #ffffff; }
 
 .container {
   -webkit-overflow-scrolling: touch;
@@ -515,6 +517,8 @@ a.media-box:active {
     color: #75c171; }
   .people-wrapper .media-control {
     margin-top: .2rem; }
+    .people-wrapper .media-control .ui-badge {
+      margin: 0 2px; }
   .people-wrapper .weui_media_box.weui_media_appmsg {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
@@ -711,7 +715,8 @@ a.media-box:active {
         -webkit-border-radius: 0.36rem;
         border-radius: 0.36rem;
         font-size: .24rem;
-        color: #898989; }
+        color: #898989;
+        margin: 0 2px; }
   .my-login-content .login-content-b {
     text-align: center;
     padding: .3rem 0;
