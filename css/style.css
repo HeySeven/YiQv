@@ -1174,4 +1174,22 @@ a.cell-question-box:active {
       font-size: 0.34rem;
       margin-bottom: 0; }
 
+.md-sm {
+  text-align: center;
+  color: #313131;
+  padding-top: 2.15rem; }
+  .md-sm h2 {
+    font-size: .3rem;
+    font-weight: normal;
+    margin-bottom: .42rem; }
+  .md-sm .md-img {
+    margin: 0 auto;
+    width: 3.6rem; }
+    .md-sm .md-img img {
+      max-width: 100%; }
+  .md-sm p {
+    padding-top: .3rem;
+    font-size: .24rem;
+    line-height: .42rem; }
+
 /*# sourceMappingURL=style.css.map */
