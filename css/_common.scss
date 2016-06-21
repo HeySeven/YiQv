@@ -57,13 +57,16 @@ $pd: .3rem;
   box-sizing: border-box
 }
 
-
 body, html {
   height: 100%;
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $color;
+}
+
+html{
+  font-size: 50px;
 }
 
 body {
@@ -219,6 +222,9 @@ button.close {
 .alert-primary {
   color: #fff;
   background-color: $primary-color !important;
+  a{
+    color: #ffffff;
+  }
 }
 
 .alert-danger {
@@ -282,7 +288,7 @@ button.close {
   color: $danger-color;
   height: .4rem;
   line-height: .4rem;
-  padding: 0 .2rem;
+  padding: 0 .15rem;
   @include x-border-radius(.24rem);
 }
 

@@ -16,6 +16,9 @@ body, html {
   -moz-osx-font-smoothing: grayscale;
   color: #1b1b1b; }
 
+html {
+  font-size: 50px; }
+
 body {
   overflow-x: hidden;
   background-color: #f5f5f5;
@@ -147,6 +150,8 @@ button.close {
 .alert-primary {
   color: #fff;
   background-color: #75c171 !important; }
+  .alert-primary a {
+    color: #ffffff; }
 
 .alert-danger {
   color: #fff;
@@ -202,7 +207,7 @@ button.close {
   color: #fc6864;
   height: .4rem;
   line-height: .4rem;
-  padding: 0 .2rem;
+  padding: 0 .15rem;
   -moz-border-radius: 0.24rem;
   -webkit-border-radius: 0.24rem;
   border-radius: 0.24rem; }
@@ -286,6 +291,8 @@ button.close {
       line-height: .44rem; }
     .topic-list > a dl dd, .topic-list .topic-detail dl dd {
       font-size: 0.24rem; }
+.topic-list > a {
+  height: 4rem !important; }
 
 .topic-detail .top-head {
   padding: 0.3rem; }
@@ -347,13 +354,14 @@ a.media-box:active {
   display: -webkit-flex;
   display: flex; }
   .media-bd .media-author {
+    position: relative;
     width: .72rem;
     height: .72rem;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    margin-right: .2rem;
-    overflow: hidden; }
+    margin-right: .2rem; }
+    .media-bd .media-author img {
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%; }
   .media-bd .media-audio {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
@@ -465,6 +473,7 @@ a.media-box:active {
   margin-bottom: .2rem;
   display: block; }
   .cell-media-box .weui_media_box.weui_media_appmsg .weui_media_hd {
+    position: relative;
     width: .84rem;
     height: .84rem;
     line-height: .84rem;
@@ -593,12 +602,17 @@ a.media-box:active {
   background-color: #ffffff; }
   .my-head .my-dl {
     margin-bottom: .1rem; }
-    .my-head .my-dl dt img {
+    .my-head .my-dl dt {
+      position: relative;
       width: 1.16rem;
       height: 1.16rem;
-      -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-      border-radius: 50%; }
+      margin: 0 auto; }
+      .my-head .my-dl dt img {
+        width: 1.16rem;
+        height: 1.16rem;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%; }
     .my-head .my-dl dd {
       font-size: 0.32rem;
       color: #1b1b1b; }
@@ -693,7 +707,7 @@ a.media-box:active {
     -moz-border-radius: 0.3rem;
     -webkit-border-radius: 0.3rem;
     border-radius: 0.3rem;
-    font-size: 0.28rem;
+    font-size: 0.26rem;
     color: #707070;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -734,6 +748,8 @@ a.media-box:active {
       .my-login-content .login-content-b dl dt {
         font-size: 0.32rem;
         color: #75c171; }
+        .my-login-content .login-content-b dl dt a {
+          color: #75c171; }
       .my-login-content .login-content-b dl dd {
         color: #aaa;
         font-size: 0.28rem; }
@@ -1125,19 +1141,22 @@ a.cell-question-box:active {
     border-radius: 0.22rem 0.22rem 0 0;
     background-color: #ffffff; }
     .er-inner .er-a .img-box {
+      position: relative;
       margin-top: -2em;
       display: inline-block;
       width: 1.1rem;
       height: 1.1rem;
+      border: .08rem solid #fff;
       -moz-border-radius: 50%;
       -webkit-border-radius: 50%;
-      border-radius: 50%;
-      border: .08rem solid #fff;
-      overflow: hidden; }
+      border-radius: 50%; }
       .er-inner .er-a .img-box img {
         width: 100%;
         height: 100%;
-        display: block; }
+        display: block;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%; }
     .er-inner .er-a .er-dl {
       padding-bottom: .32rem; }
       .er-inner .er-a .er-dl dt {
@@ -1196,5 +1215,26 @@ a.cell-question-box:active {
     padding-top: .3rem;
     font-size: .24rem;
     line-height: .42rem; }
+
+.vip:before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "\e637";
+  font-family: "iconfont" !important;
+  color: #ffc107;
+  line-height: 1;
+  font-size: .26rem;
+  width: .26rem;
+  height: .26rem;
+  background: #ffffff;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
 
 /*# sourceMappingURL=style.css.map */

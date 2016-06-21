@@ -1,13 +1,12 @@
-
 (function (win, lib) {
     var doc = win.document;
     var docEl = doc.documentElement;
     // 设备像素比
     var devicePixelRatio = win.devicePixelRatio;
     // 我们设置的布局视口与理想视口的像素比
-    var dpr = 1; 
+    var dpr = 1;
     // viewport缩放值
-    var scale = 1; 
+    var scale = 1;
     // 设置viewport
     function setViewport() {
         // 判断IOS
@@ -29,19 +28,19 @@
             // target-densitydpi 目标设备密度等级，默认值medium-dpi，我们的目标是css中的1px会等于物理像素中的1px，故使用target-densitydpi=device-dpi
             else {
                 hasMetaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no,target-densitydpi=device-dpi');
-            } 
+            }
         }
         // 如果没有，添加之
         else {
             var metaEl = doc.createElement('meta');
             metaEl.setAttribute('name', 'viewport');
-            if (isIPhone) { 
+            if (isIPhone) {
                 metaEl.setAttribute('content', 'initial-scale=' + scale + ', user-scalable=no');
             }
             else {
                 metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no,target-densitydpi=device-dpi');
             }
-            
+
             if (docEl.firstElementChild) {
                 docEl.firstElementChild.appendChild(metaEl);
             }
@@ -52,6 +51,7 @@
             }
         }
     }
+
     setViewport();
     var newBase = 100;
 
@@ -79,8 +79,9 @@
         // rem基准值改变后，手动reflow一下，避免旋转手机后页面自适应问题
         //doc.body&&(doc.body.style.fontSize = lib.baseFont * dpr + 'px');
         // 重新设置rem后的回调方法
-        lib.setRemCallback&&lib.setRemCallback();
+        lib.setRemCallback && lib.setRemCallback();
     }
+
     var tid;
     lib.desinWidth = 640;
     lib.baseFont = 18;
@@ -99,17 +100,32 @@
             }
         }, false);
         // 设置body上的字体大小
-        if (doc.readyState === 'complete') {
-            doc.body.style.fontSize = lib.baseFont * dpr + 'px';
-        }
-        else {
-            doc.addEventListener('DOMContentLoaded', function (e) {
-                doc.body.style.fontSize = lib.baseFont * dpr + 'px';
-            }, false);
-        }
+        //if (doc.readyState === 'complete') {
+        //    doc.body.style.fontSize = lib.baseFont * dpr + 'px';
+        //}
+        //else {
+        //    doc.addEventListener('DOMContentLoaded', function (e) {
+        //        doc.body.style.fontSize = lib.baseFont * dpr + 'px';
+        //    }, false);
+        //}
         // 设置rem值
         setRem();
         // html节点设置布局视口与理想视口的像素比
         docEl.setAttribute('data-dpr', dpr);
     };
 })(window, window['adaptive'] || (window['adaptive'] = {}));
+
+// 设计图宽度
+window['adaptive'].desinWidth = 640;
+// body 字体大小
+//window['adaptive'].baseFont = 18;
+
+// 显示最大宽度 可选
+window['adaptive'].maxWidth = 480;
+// rem值改变后执行方法 可选
+/*window['adaptive'].setRemCallback = function () {
+ alert(1)
+ }
+ */
+// 初始化
+window['adaptive'].init();

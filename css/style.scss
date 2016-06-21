@@ -82,7 +82,9 @@
       }
     }
   }
-
+  & > a{
+    height: 4rem!important;
+  }
 }
 
 .topic-detail {
@@ -152,11 +154,13 @@ a.media-box {
 .media-bd {
   @include flexbox();
   .media-author {
+    position: relative;
     width: .72rem;
     height: .72rem;
-    @include x-border-radius(50%);
     margin-right: .2rem;
-    overflow: hidden;
+    img{
+      @include x-border-radius(50%);
+    }
   }
   .media-audio {
     @include flex(1);
@@ -272,6 +276,7 @@ a.media-box {
   display: block;
   .weui_media_box.weui_media_appmsg {
     .weui_media_hd {
+      position: relative;
       width: .84rem;
       height: .84rem;
       line-height: .84rem;
@@ -427,6 +432,10 @@ a.media-box {
   .my-dl {
     margin-bottom: .1rem;
     dt {
+      position: relative;
+      width: 1.16rem;
+      height: 1.16rem;
+      margin: 0 auto;
       img {
         width: 1.16rem;
         height: 1.16rem;
@@ -536,7 +545,7 @@ a.media-box {
     padding: 0 .3rem;
     background-color: #ffffff;
     @include x-border-radius(.3rem);
-    font-size: $fz-sm;
+    font-size: 0.26rem;
     color: #707070;
     @include x-text-overflow(ellipsis);
     border: 1px solid #e0e0e0;
@@ -570,6 +579,9 @@ a.media-box {
       dt {
         font-size: $fz-normal;
         color: $primary-color;
+        a{
+          color: $primary-color;
+        }
       }
       dd {
         color: $lighter-color;
@@ -1008,17 +1020,18 @@ a.cell-question-box:active {
     @include x-border-radius(0.22rem 0.22rem 0 0);
     background-color: #ffffff;
     .img-box{
+      position: relative;
       margin-top: -2em;
       display: inline-block;
       width: 1.1rem;
       height: 1.1rem;
-      @include x-border-radius(50%);
       border: .08rem solid #fff;
-      overflow: hidden;
+      @include x-border-radius(50%);
       img{
         width: 100%;
         height: 100%;
         display: block;
+        @include x-border-radius(50%);
       }
     }
     .er-dl{
@@ -1097,5 +1110,27 @@ a.cell-question-box:active {
     padding-top: .3rem;
     font-size: .24rem;
     line-height: .42rem;
+  }
+}
+
+.vip{
+  &:before{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "\e637";
+    font-family: "iconfont" !important;
+    color: #ffc107;
+    line-height: 1;
+    font-size: .26rem;
+    width: .26rem;
+    height: .26rem;
+    background: #ffffff;
+    @include x-border-radius(50%);
+    overflow: hidden;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
