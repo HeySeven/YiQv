@@ -559,7 +559,7 @@ a.media-box:active {
 .sort-box {
   border-top: 1px solid #efefef;
   background-color: #fff;
-  padding: .3rem;
+  padding: .35rem .3rem;
   text-align: center; }
 
 .sort-btn-box {
@@ -580,14 +580,59 @@ a.media-box:active {
     border-right: 1px solid #efefef; }
     .sort-btn-box li:last-child {
       border-right: 0; }
+    .sort-btn-box li:nth-child(1) i {
+      color: #fc6864; }
+    .sort-btn-box li:nth-child(2) i {
+      color: #75c171; }
 
 .sort-btn {
   display: block;
-  padding: .25rem 0;
+  padding: .1rem 0;
   color: #1b1b1b;
   font-size: .26rem;
   background-color: #ffffff;
   line-height: 1; }
+  .sort-btn i {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .45rem;
+    margin-top: -.06rem;
+    margin-right: .15rem; }
+
+.recommend-user {
+  background-color: #ffffff;
+  padding: .24rem 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  text-align: center; }
+  .recommend-user > a {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+    .recommend-user > a img, .recommend-user > a .like-img {
+      display: inline-block;
+      vertical-align: top;
+      width: .88rem;
+      height: .88rem;
+      line-height: .88rem;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background-color: #f7f7f7;
+      color: #dcdcdc; }
+    .recommend-user > a span {
+      display: block;
+      font-size: .2rem;
+      padding-top: .1rem;
+      color: #1b1b1b;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
 
 .xyz-box .xyz-title {
   font-size: 0.28rem;
