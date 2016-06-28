@@ -1387,4 +1387,23 @@ a.cell-question-box:active {
       font-weight: normal;
       color: #898989; }
 
+.has-r-st {
+  position: relative; }
+  .has-r-st .weui_media_box.weui_media_appmsg {
+    padding-right: 1.2rem; }
+  .has-r-st .st-wrap {
+    position: absolute;
+    right: .3rem;
+    top: 50%;
+    margin-top: -.6rem;
+    text-align: center; }
+    .has-r-st .st-wrap i {
+      font-size: .5rem; }
+    .has-r-st .st-wrap span {
+      display: block;
+      font-size: 0.24rem; }
+
+.text-default {
+  color: #aaa; }
+
 /*# sourceMappingURL=style.css.map */
