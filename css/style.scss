@@ -440,6 +440,12 @@ a.media-box {
   text-align: center;
   & > a {
     @include flex(1);
+    strong{
+      position: relative;
+      display: inline-block;
+      width: .88rem;
+      height: .88rem;
+    }
     img, .like-img {
       display: inline-block;
       vertical-align: top;
@@ -1288,6 +1294,10 @@ a.cell-question-box:active {
 
 .has-r-st{
   position: relative;
+  .weui_media_box:before{
+    display: block;
+    left: 0;
+  }
   .weui_media_box.weui_media_appmsg{
     padding-right: 1.2rem;
   }
@@ -1310,7 +1320,29 @@ a.cell-question-box:active {
   color: $lighter-color;
 }
 
-
+.cell-media-header{
+  background-color: #ffffff;
+  padding: .16rem .3rem;
+  font-size: 0.28rem;
+  color: #898989;
+  ul{
+    li{
+      float: left;
+      color: #898989;
+      font-size: 0.28rem;
+      &.active {
+        color: $danger-color;
+      }
+      &:after {
+        content: "｜";
+        color: $light-color;
+      }
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+}
 
 
 

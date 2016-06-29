@@ -614,6 +614,11 @@ a.media-box:active {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1; }
+    .recommend-user > a strong {
+      position: relative;
+      display: inline-block;
+      width: .88rem;
+      height: .88rem; }
     .recommend-user > a img, .recommend-user > a .like-img {
       display: inline-block;
       vertical-align: top;
@@ -1389,6 +1394,9 @@ a.cell-question-box:active {
 
 .has-r-st {
   position: relative; }
+  .has-r-st .weui_media_box:before {
+    display: block;
+    left: 0; }
   .has-r-st .weui_media_box.weui_media_appmsg {
     padding-right: 1.2rem; }
   .has-r-st .st-wrap {
@@ -1405,5 +1413,22 @@ a.cell-question-box:active {
 
 .text-default {
   color: #aaa; }
+
+.cell-media-header {
+  background-color: #ffffff;
+  padding: .16rem .3rem;
+  font-size: 0.28rem;
+  color: #898989; }
+  .cell-media-header ul li {
+    float: left;
+    color: #898989;
+    font-size: 0.28rem; }
+    .cell-media-header ul li.active {
+      color: #fc6864; }
+    .cell-media-header ul li:after {
+      content: "｜";
+      color: #898989; }
+    .cell-media-header ul li:last-child:after {
+      display: none; }
 
 /*# sourceMappingURL=style.css.map */
