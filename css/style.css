@@ -925,6 +925,9 @@ a.cell-question-box:active {
 .media-d {
   min-height: 1.52rem;
   padding: .36rem 0; }
+  .media-d i {
+    line-height: 1;
+    color: #434343; }
 
 .media-e .btn {
   color: #ffffff;
@@ -958,6 +961,11 @@ a.cell-question-box:active {
     -moz-box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.1);
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.1); }
+  .media-btn.media-btn-responder {
+    background-image: url(../images/media-btn-d.png);
+    -moz-box-shadow: 0 0.1rem 0.4rem rgba(252, 104, 100, 0.46);
+    -webkit-box-shadow: 0 0.1rem 0.4rem rgba(252, 104, 100, 0.46);
+    box-shadow: 0 0.1rem 0.4rem rgba(252, 104, 100, 0.46); }
 
 .media-re-btn {
   display: inline-block;

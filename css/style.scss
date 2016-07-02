@@ -762,6 +762,10 @@ a.cell-question-box:active {
 .media-d {
   min-height: 1.52rem;
   padding: .36rem 0;
+  i{
+    line-height: 1;
+    color: #434343;
+  }
 }
 
 .media-e {
@@ -790,6 +794,10 @@ a.cell-question-box:active {
   &.media-btn-play {
     background-image: url(../images/media-btn-c.png);
     @include x-box-shadow(0 .1rem .4rem rgba(0, 0, 0, 0.1));
+  }
+  &.media-btn-responder {
+    background-image: url(../images/media-btn-d.png);
+    @include x-box-shadow(0 0.1rem 0.4rem rgba(252, 104, 100, 0.46));
   }
 }
 
