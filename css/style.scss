@@ -1352,7 +1352,18 @@ a.cell-question-box:active {
   }
 }
 
-
+.my-head-opposite{
+  .my-dl {
+    dt {
+      img{
+        background-color: #ffffff;
+      }
+    }
+    dd{
+      color: #ffffff;
+    }
+  }
+}
 
 
 

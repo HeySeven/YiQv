@@ -1439,4 +1439,9 @@ a.cell-question-box:active {
     .cell-media-header ul li:last-child:after {
       display: none; }
 
+.my-head-opposite .my-dl dt img {
+  background-color: #ffffff; }
+.my-head-opposite .my-dl dd {
+  color: #ffffff; }
+
 /*# sourceMappingURL=style.css.map */
