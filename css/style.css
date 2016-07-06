@@ -1444,4 +1444,42 @@ a.cell-question-box:active {
 .my-head-opposite .my-dl dd {
   color: #ffffff; }
 
+.webo-wrap .weui_media_box.weui_media_appmsg {
+  padding: .15rem .24rem; }
+  .webo-wrap .weui_media_box.weui_media_appmsg .weui_media_hd {
+    width: .5rem;
+    height: .5rem;
+    line-height: .5rem; }
+  .webo-wrap .weui_media_box.weui_media_appmsg .weui_media_title {
+    height: .5rem;
+    line-height: .5rem;
+    font-size: 0.24rem; }
+    .webo-wrap .weui_media_box.weui_media_appmsg .weui_media_title span {
+      margin-right: 5px; }
+.webo-wrap .weui_cell {
+  padding: 0 .2rem .3rem; }
+  .webo-wrap .weui_cell:before {
+    display: none; }
+  .webo-wrap .weui_cell .weui_cell_primary {
+    background-color: #f7f7f7;
+    padding: .1rem .2rem;
+    border: 1px solid #f2f0f0;
+    -moz-border-radius: 0.14rem;
+    -webkit-border-radius: 0.14rem;
+    border-radius: 0.14rem; }
+    .webo-wrap .weui_cell .weui_cell_primary .weui_textarea {
+      background-color: transparent; }
+
+.media-wb .media-new {
+  padding: .8rem .3rem .7rem; }
+  .media-wb .media-new dt {
+    font-size: .42rem;
+    color: #707070;
+    font-weight: bold; }
+  .media-wb .media-new dd {
+    font-size: 0.24rem;
+    color: #bfbfbf; }
+.media-wb .media-e {
+  margin-top: .7rem; }
+
 /*# sourceMappingURL=style.css.map */

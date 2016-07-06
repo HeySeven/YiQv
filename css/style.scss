@@ -1365,7 +1365,54 @@ a.cell-question-box:active {
   }
 }
 
+.webo-wrap{
+  .weui_media_box.weui_media_appmsg{
+    padding:.15rem .24rem;
+    .weui_media_hd{
+      width: .5rem;
+      height: .5rem;
+      line-height: .5rem;
+    }
+    .weui_media_title{
+      height: .5rem;
+      line-height: .5rem;
+      font-size: $fz-xs;
+      span{
+        margin-right: 5px;
+      }
+    }
+  }
+  .weui_cell{
+    padding:0 .2rem .3rem;
+    &:before{
+      display: none;
+    }
+    .weui_cell_primary{
+      background-color: #f7f7f7;
+      padding: .1rem .2rem;
+      border: 1px solid #f2f0f0;
+      @include x-border-radius(0.14rem);
+      .weui_textarea{
+        background-color: transparent;
+      }
+    }
+  }
+}
 
-
-
-
+.media-wb{
+  .media-new{
+    padding: .8rem .3rem .7rem;
+    dt{
+      font-size: .42rem;
+      color: #707070;
+      font-weight: bold;
+    }
+    dd{
+      font-size: $fz-xs;
+      color: #bfbfbf;
+    }
+  }
+  .media-e{
+    margin-top: .7rem;
+  }
+}
