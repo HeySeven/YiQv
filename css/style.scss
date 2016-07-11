@@ -223,6 +223,7 @@ a.media-box {
   z-index: 10;
   ul {
     @include flexbox();
+    @include box-align(center);
     li {
       @include flex(1);
       a {
@@ -235,6 +236,15 @@ a.media-box {
           display: block;
           margin-bottom: .1rem;
           font-size: .35rem;
+        }
+        &.main-btn{
+          display: inline-block;
+          padding: .15rem .3rem;
+          @include x-border-radius(.1rem);
+          background-color: $primary-color;
+          i{
+            color: #ffffff;
+          }
         }
       }
       &.active {
@@ -440,7 +450,7 @@ a.media-box {
   text-align: center;
   & > a {
     @include flex(1);
-    strong{
+    strong {
       position: relative;
       display: inline-block;
       width: .88rem;
@@ -578,16 +588,124 @@ a.media-box {
   }
 }
 
+.my-head-new {
+  position: relative;
+  padding: .3rem .3rem .3rem;
+  .my-btn-side {
+    position: absolute;
+    right: .2rem;
+    top: .2rem;
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      color: #898989;
+      margin-left: .2rem;
+    }
+  }
+  .my-dl {
+    dd {
+      margin-top: .1rem;
+    }
+  }
+  .my-head-dis {
+    position: static;
+    .head-dis-inner {
+      background-color: transparent;
+      border: 0;
+    }
+  }
+}
+
+.my-flex-link {
+  @include flexbox();
+  background-color: #ffffff;
+  text-align: center;
+  & > a {
+    padding: .15rem;
+    @include flex(1);
+    color: $light-color;
+    strong{
+      color: $color;
+    }
+  }
+}
+
+.my-dis-new{
+  padding: .1rem .2rem;
+  font-size: $fz-xs;
+  color: $lighter-color;
+  span{
+    color: $danger-color;
+  }
+}
+
+.my-new-content{
+  .login-content-b{
+    padding: .15rem 0!important;
+    a{
+      @include flex(1);
+      dl{
+        dt{
+            font-size: .38rem!important;
+        }
+        dd{
+          color: $color;
+          font-size: $fz-xs;
+        }
+      }
+      &:nth-child(1){
+        dt{
+          color: $danger-color;
+        }
+      }
+      &:nth-child(2){
+        dt{
+          color: #6faaee;
+        }
+      }
+      &:nth-child(3){
+        dt{
+          color: $warning-color;
+        }
+      }
+    }
+  }
+}
+
+.sina-bind{
+  .weui_cell_ft{
+    a{
+      display: inline-block;
+      padding: .03rem .2rem;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+      font-size: $fz-xs;
+      @include x-border-radius(.04rem);
+    }
+    &:after{
+      display: none!important;
+    }
+  }
+}
+
+.my-cells-new{
+  .weui_cells .weui_cell{
+    font-size: $fz-sm;
+  }
+}
+
 .my-head-b {
   position: relative;
   background: url(../images/my-head-bg-b.jpg) center no-repeat;
   @include x-background-size(cover);
 }
+
 .my-head-c {
   position: relative;
   background: url(../images/my-head-bg-c.jpg) center no-repeat;
   @include x-background-size(cover);
 }
+
 .my-head-dis {
   position: absolute;
   left: .2rem;
@@ -762,7 +880,7 @@ a.cell-question-box:active {
 .media-d {
   min-height: 1.52rem;
   padding: .36rem 0;
-  i{
+  i {
     line-height: 1;
     color: #434343;
   }
@@ -1201,25 +1319,25 @@ a.cell-question-box:active {
 .qy-login-content {
   .login-content-a {
     background-color: #ffffff;
-    padding:.25rem .3rem;
+    padding: .25rem .3rem;
   }
-  .login-content-e{
-    padding:.2rem .25rem 0;
-    .qy-st-list{
+  .login-content-e {
+    padding: .2rem .25rem 0;
+    .qy-st-list {
       @include x-clearfix();
       display: inline-block;
       line-height: 1;
       padding: .07rem 0;
-      li{
+      li {
         float: left;
         margin-right: .1rem;
-        img{
+        img {
           display: block;
           width: .45rem;
           height: .45rem;
           @include x-border-radius(50%);
         }
-        .like-img{
+        .like-img {
           display: block;
           width: .45rem;
           height: .45rem;
@@ -1228,7 +1346,7 @@ a.cell-question-box:active {
           @include x-border-radius(50%);
           background-color: #e7e7e7;
           color: #c9c9c9;
-          i{
+          i {
             line-height: 1;
             font-size: .3rem;
           }
@@ -1236,48 +1354,50 @@ a.cell-question-box:active {
       }
     }
   }
-  .login-content-f{
-    .content-f-a{
-      .weui_cell{
-        padding:0 .25rem .1rem;
+  .login-content-f {
+    .content-f-a {
+      .weui_cell {
+        padding: 0 .25rem .1rem;
       }
     }
-    .textarea-box{
+    .textarea-box {
       background-color: #ffffff;
     }
   }
 }
-.qy-dis-list{
+
+.qy-dis-list {
   padding: .1rem .25rem;
   color: $light-color;
   font-size: $fz-xs;
 }
 
-.issue-panel{
+.issue-panel {
   margin: .15rem 0 .2rem;
   background-color: #ffffff;
-  .issue-panel-header{
+  .issue-panel-header {
     padding: .20rem;
     text-align: center;
     font-size: $fz-sm;
-    .pull-right{
+    .pull-right {
       color: $light-color;
     }
   }
-  .issue-panel-body{
-    padding:.25rem 0;
+  .issue-panel-body {
+    padding: .25rem 0;
   }
 }
-.issue-author-list{
+
+.issue-author-list {
   @include flexbox();
   text-align: center;
-  li{
+  li {
     @include flex(1);
-    a{
+    a {
       display: block;
       color: $color;
     }
-    img{
+    img {
       width: .84rem;
       height: .84rem;
       line-height: .84rem;
@@ -1286,12 +1406,12 @@ a.cell-question-box:active {
       background-color: #e7e7e7;
       color: #c9c9c9;
     }
-    strong{
+    strong {
       display: block;
       font-size: $fz-sm;
       font-weight: normal;
     }
-    span{
+    span {
       display: block;
       font-size: $fz-xs;
       font-weight: normal;
@@ -1300,41 +1420,42 @@ a.cell-question-box:active {
   }
 }
 
-.has-r-st{
+.has-r-st {
   position: relative;
-  .weui_media_box:before{
+  .weui_media_box:before {
     display: block;
     left: 0;
   }
-  .weui_media_box.weui_media_appmsg{
+  .weui_media_box.weui_media_appmsg {
     padding-right: 1.2rem;
   }
-  .st-wrap{
+  .st-wrap {
     position: absolute;
     right: .3rem;
     top: 50%;
     margin-top: -.6rem;
     text-align: center;
-    i{
+    i {
       font-size: .5rem;
     }
-    span{
+    span {
       display: block;
       font-size: $fz-xs;
     }
   }
 }
-.text-default{
+
+.text-default {
   color: $lighter-color;
 }
 
-.cell-media-header{
+.cell-media-header {
   background-color: #ffffff;
   padding: .16rem .3rem;
   font-size: 0.28rem;
   color: #898989;
-  ul{
-    li{
+  ul {
+    li {
       float: left;
       color: #898989;
       font-size: 0.28rem;
@@ -1352,67 +1473,67 @@ a.cell-question-box:active {
   }
 }
 
-.my-head-opposite{
+.my-head-opposite {
   .my-dl {
     dt {
-      img{
+      img {
         background-color: #ffffff;
       }
     }
-    dd{
+    dd {
       color: #ffffff;
     }
   }
 }
 
-.webo-wrap{
-  .weui_media_box.weui_media_appmsg{
-    padding:.15rem .24rem;
-    .weui_media_hd{
+.webo-wrap {
+  .weui_media_box.weui_media_appmsg {
+    padding: .15rem .24rem;
+    .weui_media_hd {
       width: .5rem;
       height: .5rem;
       line-height: .5rem;
     }
-    .weui_media_title{
+    .weui_media_title {
       height: .5rem;
       line-height: .5rem;
       font-size: $fz-xs;
-      span{
+      span {
         margin-right: 5px;
       }
     }
   }
-  .weui_cell{
-    padding:0 .2rem .3rem;
-    &:before{
+  .weui_cell {
+    padding: 0 .2rem .3rem;
+    &:before {
       display: none;
     }
-    .weui_cell_primary{
+    .weui_cell_primary {
       background-color: #f7f7f7;
       padding: .1rem .2rem;
       border: 1px solid #f2f0f0;
       @include x-border-radius(0.14rem);
-      .weui_textarea{
+      .weui_textarea {
         background-color: transparent;
       }
     }
   }
 }
 
-.media-wb{
-  .media-new{
+.media-wb {
+  .media-new {
     padding: .8rem .3rem .7rem;
-    dt{
+    dt {
       font-size: .42rem;
       color: #707070;
       font-weight: bold;
     }
-    dd{
+    dd {
       font-size: $fz-xs;
       color: #bfbfbf;
     }
   }
-  .media-e{
+  .media-e {
     margin-top: .7rem;
   }
 }
