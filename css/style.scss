@@ -239,11 +239,12 @@ a.media-box {
         }
         &.main-btn{
           display: inline-block;
-          padding: .15rem .3rem;
+          padding: .05rem .2rem;
           @include x-border-radius(.1rem);
           background-color: $primary-color;
           i{
             color: #ffffff;
+            font-size:.5rem;
           }
         }
       }
@@ -612,6 +613,25 @@ a.media-box {
     .head-dis-inner {
       background-color: transparent;
       border: 0;
+      font-size: 0.20rem;
+    }
+  }
+  &.has-bg{
+    position: relative;
+    background: url(../images/my-head-bg-d.jpg) center no-repeat;
+    @include x-background-size(cover);
+    .my-dl {
+      dd{
+        color: #ffffff;
+      }
+    }
+    .head-dis-inner{
+      color: #ffffff;
+    }
+    .my-btn-side{
+      a{
+        color: #ffffff;
+      }
     }
   }
 }
@@ -637,6 +657,9 @@ a.media-box {
   span{
     color: $danger-color;
   }
+  i{
+    font-size: $fz-sm;
+  }
 }
 
 .my-new-content{
@@ -647,6 +670,21 @@ a.media-box {
       dl{
         dt{
             font-size: .38rem!important;
+          i{
+            position: relative;
+            b{
+              position: absolute;
+              top: -.06rem;
+              right: -.14rem;
+              width: .24rem;
+              height: .24rem;
+              line-height: .24rem;
+              font-size: $fz-xs;
+              background: $danger-color;
+              color: #fff;
+              @include x-border-radius(50%);
+            }
+          }
         }
         dd{
           color: $color;
@@ -1131,25 +1169,23 @@ a.cell-question-box:active {
   }
   .topic-panel-head {
     background-color: #ffffff;
-    padding: .16rem .3rem;
+
     .pull-right {
+      padding: .16rem .3rem;
       font-size: $fz-sm;
       color: $light-color;
     }
     ul {
+      @include x-clearfix();
+      text-align: center;
       li {
-        float: left;
+        padding: .16rem .3rem;
+        display: inline-block;
         color: $light-color;
         font-size: $fz-sm;
         &.active {
           color: $color;
-        }
-        &:after {
-          content: "｜";
-          color: $light-color;
-        }
-        &:last-child:after {
-          display: none;
+          border-bottom: 2px solid $danger-color;
         }
       }
     }
@@ -1320,6 +1356,15 @@ a.cell-question-box:active {
   .login-content-a {
     background-color: #ffffff;
     padding: .25rem .3rem;
+    @include flexbox();
+    font-size:$fz-xs;
+    .dis-jj{
+      color: $light-color;
+      padding-right:.2rem;
+    }
+    p{
+      @include flex(1);
+    }
   }
   .login-content-e {
     padding: .2rem .25rem 0;

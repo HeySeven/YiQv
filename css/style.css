@@ -451,13 +451,14 @@ a.media-box:active {
           font-size: .35rem; }
         .fix-btn-box ul li a.main-btn {
           display: inline-block;
-          padding: .15rem .3rem;
+          padding: .05rem .2rem;
           -moz-border-radius: 0.1rem;
           -webkit-border-radius: 0.1rem;
           border-radius: 0.1rem;
           background-color: #75c171; }
           .fix-btn-box ul li a.main-btn i {
-            color: #ffffff; }
+            color: #ffffff;
+            font-size: .5rem; }
       .fix-btn-box ul li.active a {
         color: #75c171; }
 
@@ -765,7 +766,21 @@ a.media-box:active {
     position: static; }
     .my-head-new .my-head-dis .head-dis-inner {
       background-color: transparent;
-      border: 0; }
+      border: 0;
+      font-size: 0.20rem; }
+  .my-head-new.has-bg {
+    position: relative;
+    background: url(../images/my-head-bg-d.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .my-head-new.has-bg .my-dl dd {
+      color: #ffffff; }
+    .my-head-new.has-bg .head-dis-inner {
+      color: #ffffff; }
+    .my-head-new.has-bg .my-btn-side a {
+      color: #ffffff; }
 
 .my-flex-link {
   display: -webkit-box;
@@ -792,6 +807,8 @@ a.media-box:active {
   color: #aaa; }
   .my-dis-new span {
     color: #fc6864; }
+  .my-dis-new i {
+    font-size: 0.28rem; }
 
 .my-new-content .login-content-b {
   padding: 0.15rem 0 !important; }
@@ -803,6 +820,21 @@ a.media-box:active {
     flex: 1; }
     .my-new-content .login-content-b a dl dt {
       font-size: 0.38rem !important; }
+      .my-new-content .login-content-b a dl dt i {
+        position: relative; }
+        .my-new-content .login-content-b a dl dt i b {
+          position: absolute;
+          top: -.06rem;
+          right: -.14rem;
+          width: .24rem;
+          height: .24rem;
+          line-height: .24rem;
+          font-size: 0.24rem;
+          background: #fc6864;
+          color: #fff;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          border-radius: 50%; }
     .my-new-content .login-content-b a dl dd {
       color: #1b1b1b;
       font-size: 0.24rem; }
@@ -1234,22 +1266,27 @@ a.cell-question-box:active {
   .topic-panel.topic-media .media-box {
     margin-bottom: 0; }
 .topic-panel .topic-panel-head {
-  background-color: #ffffff;
-  padding: .16rem .3rem; }
+  background-color: #ffffff; }
   .topic-panel .topic-panel-head .pull-right {
+    padding: .16rem .3rem;
     font-size: 0.28rem;
     color: #898989; }
-  .topic-panel .topic-panel-head ul li {
-    float: left;
-    color: #898989;
-    font-size: 0.28rem; }
-    .topic-panel .topic-panel-head ul li.active {
-      color: #1b1b1b; }
-    .topic-panel .topic-panel-head ul li:after {
-      content: "｜";
-      color: #898989; }
-    .topic-panel .topic-panel-head ul li:last-child:after {
-      display: none; }
+  .topic-panel .topic-panel-head ul {
+    *zoom: 1;
+    text-align: center; }
+    .topic-panel .topic-panel-head ul:before, .topic-panel .topic-panel-head ul:after {
+      content: " ";
+      display: table; }
+    .topic-panel .topic-panel-head ul:after {
+      clear: both; }
+    .topic-panel .topic-panel-head ul li {
+      padding: .16rem .3rem;
+      display: inline-block;
+      color: #898989;
+      font-size: 0.28rem; }
+      .topic-panel .topic-panel-head ul li.active {
+        color: #1b1b1b;
+        border-bottom: 2px solid #fc6864; }
 
 .wangqi {
   float: left;
@@ -1399,7 +1436,22 @@ a.cell-question-box:active {
 
 .qy-login-content .login-content-a {
   background-color: #ffffff;
-  padding: .25rem .3rem; }
+  padding: .25rem .3rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0.24rem; }
+  .qy-login-content .login-content-a .dis-jj {
+    color: #898989;
+    padding-right: .2rem; }
+  .qy-login-content .login-content-a p {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
 .qy-login-content .login-content-e {
   padding: .2rem .25rem 0; }
   .qy-login-content .login-content-e .qy-st-list {
