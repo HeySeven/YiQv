@@ -513,4 +513,44 @@ img {
 .my-cells-new .weui_cells .weui_cell {
   font-size: 0.28rem; }
 
+.wx-sys {
+  position: fixed;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5); }
+  .wx-sys .er-inner {
+    width: 3.64rem;
+    margin-top: 3.18rem; }
+    .wx-sys .er-inner .er-b .er-dl dt {
+      font-size: 0.34rem;
+      margin-bottom: 0; }
+
+.er-bg {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  text-align: center; }
+
+.er-inner {
+  width: 4.64rem;
+  margin-top: 1.18rem;
+  -moz-border-radius: 0.22rem;
+  -webkit-border-radius: 0.22rem;
+  border-radius: 0.22rem;
+  display: inline-block;
+  background-color: #fafafa; }
+  .er-inner .er-b {
+    padding: .32rem; }
+    .er-inner .er-b .img-box img {
+      width: 2.44rem;
+      height: 2.44rem; }
+    .er-inner .er-b .er-dl dt {
+      font-size: .26rem;
+      margin-bottom: .12rem; }
+    .er-inner .er-b .er-dl dd {
+      font-size: .22rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+
 /*# sourceMappingURL=style.css.map */

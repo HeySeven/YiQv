@@ -476,8 +476,53 @@
   }
 }
 
+.wx-sys {
+  position: fixed;
+  z-index: 100;
+  background: rgba(0, 0, 0, .5);
+  .er-inner {
+    width: 3.64rem;
+    margin-top: 3.18rem;
+    .er-b .er-dl dt {
+      font-size: 0.34rem;
+      margin-bottom: 0;
+    }
+  }
+}
 
-
+.er-bg {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  text-align: center;
+}
+.er-inner {
+  width: 4.64rem;
+  margin-top: 1.18rem;
+  @include x-border-radius(0.22rem);
+  display: inline-block;
+  background-color: #fafafa;
+  .er-b {
+    padding: .32rem;
+    .img-box {
+      img {
+        width: 2.44rem;
+        height: 2.44rem;
+      }
+    }
+    .er-dl {
+      dt {
+        font-size: .26rem;
+        margin-bottom: .12rem;
+      }
+      dd {
+        font-size: .22rem;
+        @include x-text-overflow(ellipsis);
+      }
+    }
+  }
+}
 
 
 
