@@ -212,7 +212,7 @@ img {
   position: relative;
   display: block;
   height: 3.95rem;
-  background: #fff url(../images/pic-bmw.jpg) 0 0 no-repeat;
+  background: #fff url(../images/pic-bmw.jpg) center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -300,9 +300,11 @@ img {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.45); }
     .fixed-transparent .fixed-link i {
-      margin-left: -2px;
+      margin-left: -1px;
       font-size: 0.32rem; }
 
+.detail-wrap .dt-img img {
+  width: 100%; }
 .detail-wrap .detail-box {
   padding: 0.3rem 0.2rem;
   background-color: #ffffff !important; }
@@ -351,11 +353,11 @@ img {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  margin-right: .72rem; }
+  margin-right: .8rem; }
   .audio-btn .audio-count {
     position: absolute;
     top: 0;
-    right: -.6rem;
+    left: .8rem;
     color: #898989; }
     .audio-btn .audio-count .dot-red {
       position: absolute;
@@ -552,5 +554,11 @@ img {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap; }
+
+.btn-add {
+  display: block;
+  padding: 0.2rem;
+  text-align: center;
+  color: #098be3; }
 
 /*# sourceMappingURL=style.css.map */
