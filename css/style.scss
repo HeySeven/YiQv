@@ -250,6 +250,11 @@
     font-size: $fz-big;
     margin-bottom: .5rem;
   }
+  h2{
+    font-size: $fz-big;
+    margin-bottom: .1rem;
+    padding-bottom: $space-xs;
+  }
 }
 
 .cell-media-box {
@@ -336,7 +341,9 @@
     margin-bottom: $space-sm;
   }
 }
-
+.act-detail-box{
+  padding-top: $space-sm!important;
+}
 .dt-bot-dis {
   padding: $space-sm;
   color: $color-light;
@@ -759,3 +766,78 @@
     margin-left: .1rem;
   }
 }
+
+.user-list{
+  background-color: #ffffff;
+  padding: $space-sm;
+  &>a{
+    display: block;
+    position: relative;
+    color: $color-lighter;
+    &:after{
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top:-.24rem;
+      content: '\e60b';
+      font-family: "iconfont" !important;
+      font-size: .48rem;
+      font-style: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke-width: 0.2px;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+  img{
+    width: .7rem;
+    height: .7rem;
+    @include x-border-radius(50%);
+  }
+}
+
+.act-content-b{
+  margin-bottom: $space-sm;
+  .weui_cell_primary{
+    label{
+      margin-right: $space-sm;
+    }
+  }
+}
+
+.link-btns{
+  @include flexbox();
+  @include box-align(center);
+  li{
+    @include flex(1);
+    .money-count{
+      color: #ff5722;
+      font-size: $fz-larger;
+      font-weight: bold;
+      font-style: italic;
+    }
+    a{
+      display: block;
+      padding: $space-sm;
+      i{
+        font-size: $fz-larger;
+      }
+      &.btn-success{
+        background-color: #FF9800;
+        color: #ffffff;
+        font-size: $fz-big;
+        &:active{
+          background-color: darken(#FF9800, 2);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
