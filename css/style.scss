@@ -419,11 +419,11 @@ html.overflow-hidden, html.overflow-hidden body{
     position: absolute;
     right: 0;
     bottom: 0;
-    content: "\e637";
+    content: "\e62b";
     font-family: "iconfont" !important;
     color: #ffc107;
-    line-height: 1;
-    font-size: .26rem;
+    line-height: .26rem;
+    font-size: $fz-xs;
     width: .26rem;
     height: .26rem;
     background: #ffffff;
@@ -807,6 +807,9 @@ html.overflow-hidden, html.overflow-hidden body{
 
 .act-content-b{
   margin-bottom: $space-sm;
+  a{
+    color: $color-light;
+  }
   .weui_cell_primary{
     label{
       margin-right: $space-sm;
