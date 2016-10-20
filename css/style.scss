@@ -773,10 +773,12 @@ html.overflow-hidden, html.overflow-hidden body{
 .user-list{
   background-color: #ffffff;
   padding: $space-sm;
+  @include x-clearfix();
   &>a{
     display: block;
     position: relative;
     color: $color-lighter;
+    overflow: hidden;
     &:after{
       position: absolute;
       right: 0;
@@ -793,9 +795,13 @@ html.overflow-hidden, html.overflow-hidden body{
     }
   }
   img{
+    float: left;
     width: .7rem;
     height: .7rem;
     @include x-border-radius(50%);
+    &+img{
+      margin-left: $space-xs;
+    }
   }
 }
 
@@ -1107,3 +1113,22 @@ a.ui-media-box {
   }
 }
 
+.user-panel{
+  .weui_media_box{
+    padding:$space-sm .24rem;
+    .weui_media_hd{
+      width: .7rem;
+      height: .7rem;
+      line-height: .7rem;
+      img{
+        @include x-border-radius(50%);
+      }
+    }
+    .weui_media_title{
+      font-size: $fz-normal;
+    }
+    .weui_media_desc{
+      font-size: $fz-sm;
+    }
+  }
+}
