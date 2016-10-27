@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>状态发布</title>
+    <link rel="stylesheet" href="weui/weui.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1477576532_356634.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="plugins/fastclick.min.js"></script>
+    <script src="plugins/adaptive-version2.js"></script>
+    <script src="weui/weui.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="weibo-header ui-border-b">
+        <div class="weibo-hd">
+            <img src="images/author.jpg" alt="">
+            <span>我</span>要分享
+        </div>
+        <div class="weibo-bd">
+            <div class="weui_cell ui-border">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <textarea class="weui_textarea" placeholder="分享你此刻的心情和故事~" rows="3"></textarea>
+                    <div class="weui_textarea_counter"><span>0</span>/50</div>
+                </div>
+            </div>
+        </div>
+        <div class="weibo-fd">
+            <label class="checked">
+                <span>分享你的美好时刻</span>
+            </label>
+
+        </div>
+    </div>
+    <div class="weibo-body">
+        <div class="uploader-box" id="uploader"><div class="weui_uploader">
+            <div class="weui_uploader_hd weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">图片上传</div>
+                <div class="weui_cell_ft">0/9</div>
+            </div>
+            <div class="weui_uploader_bd">
+                <ul class="weui_uploader_files">
+                </ul>
+                <div class="weui_uploader_input_wrp">
+                    <input class="weui_uploader_input" type="file" accept="image/jpg,image/jpeg,image/png,image/gif">
+                </div>
+            </div>
+        </div></div>
+        <div class="media-e">
+            <button type="button" class="btn">确定发送</button>
+        </div>
+        <script>
+            $('#uploader').uploader({
+                maxCount: 9,
+                onChange: function (file) {
+                    var update = this.update;
+                    var success = this.success;
+                    var error = this.error;
+                    $.ajax({
+                        type: 'POST',
+                        url: '/api/v1/upload?format=base64',
+                        data: {
+                            data: file.data
+                        },
+                        xhr: function () {
+                            var xhr = new window.XMLHttpRequest();
+                            xhr.addEventListener('progress', function (evt) {
+                                if (evt.lengthComputable) {
+                                    var percentComplete = evt.loaded / evt.total;
+                                    update(percentComplete + '%');
+                                }
+                            }, false);
+                            return xhr;
+                        },
+                        success: function (res) {
+                            success();
+                        },
+                        error: function (err) {
+                            error();
+                        }
+                    });
+                }
+            });
+        </script>
+    </div>
+</div>
+<div class="fix-btn-box ui-border-t">
+    <ul>
+        <li class="active">
+            <a href="#">
+                <i class="iconfont icon-hot"></i>
+                热门</a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="iconfont icon-gifts"></i>
+                发现</a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="iconfont icon-bussinessman"></i>
+                我的</a>
+        </li>
+    </ul>
+</div>
+<script>
+    $('.searbar-wrap').searchBar();
+</script>
+</body>
+</html>
