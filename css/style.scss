@@ -1266,6 +1266,11 @@ a.ui-media-box {
     color: #ffffff;
     background-color: #d2d2d2;
     border-color: #d2d2d2;
+    &.btn-success{
+      background-color: $color-success;
+      border-color: $color-success;
+      color: #ffffff;
+    }
   }
 }
 
